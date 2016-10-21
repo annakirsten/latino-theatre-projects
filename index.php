@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+
 
 <article class="post-excerpt">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
@@ -12,6 +12,6 @@
 </article>
     
 <p>index.php</p>
-</main>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

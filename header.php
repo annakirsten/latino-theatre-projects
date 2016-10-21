@@ -11,6 +11,4 @@
     
 <body <?php body_class(); ?>>
     
-<div id="wrapper">
-    
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'navigation', 'items_wrap' => '<ul id="navigation-items" class="%2$s">%3$s</ul>', ) ); ?>
