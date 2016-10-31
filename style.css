@@ -8,4 +8,41 @@ Description: Theme for the Latino Theatre Projects website
 Version: 1.0
 */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size; 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+	clear:both;
+	height:auto;
+	overflow:hidden;
+}
+
+nav ul {
+	width:100%;
+	margin:0 auto;
+}
+
+nav li {
+	float:left;
+	list-style-type:none;
+	text-align:center;
+	line-height:50px;
+	font-size:1.5em;
+	padding:0;
+}
+
+
+
+
 
