@@ -23,23 +23,23 @@ img {
 }
 
 nav {
-	clear:both;
-	height:auto;
-	overflow:hidden;
+	clear: both;
+	height: auto;
+	overflow: hidden;
 }
 
 nav ul {
-	width:100%;
-	margin:0 auto;
+	width: 100%;
+	margin: 0 auto;
 }
 
 nav li {
-	float:left;
-	list-style-type:none;
-	text-align:center;
-	line-height:50px;
-	font-size:1.5em;
-	padding:0;
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 1.5em;
+	padding: 0;
 }
 
 
