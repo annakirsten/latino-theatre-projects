@@ -81,6 +81,7 @@ function reg_scripts() {
     wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array(), true );
 }
 add_action('wp_enqueue_scripts', 'reg_scripts');
->>>>>>> styles, bootstrap
+//
+
 
 ?>
