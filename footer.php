@@ -2,7 +2,7 @@
     <ul>
         <li>Produced by Latino Theater Project Dev Team</li>
         <li><a href="disclaimer.html">Disclaimer</a></li>
-        <li>Updated: 10/11/2016</li>
+        <li>Updated: <?php the_modified_date(); ?></li>
     </ul>    
 </footer>
     

@@ -16,10 +16,12 @@ register_nav_menus(array(
 
 //register the sidebar
 register_sidebar( array(
-    'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	'after_widget'  => '</li>',
-	'before_title'  => '<h2>',
-	'after_title'   => '</h2>' 
+    'name' => __( 'dynamic_sidebar' ),
+	'id' => 'sidebar-1',
+	'before_widget' => '<div id="%1$s class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h2 class="widget_title">',
+	'after_title' => '</h2>',
 ));
 
 // Support for themes
@@ -53,5 +55,32 @@ function get_my_title_tag () {
 	echo ' | ';
 	echo 'Seattle, WA.';
 }
+
+// Custom Post type
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+    register_post_type( 'new_production',
+        array(
+        'labels' => array(
+        'name' => __( 'Productions' ),
+        'singular_name' => __( 'Production' )
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'productions'),
+        )
+    );
+}
+add_post_type_support( 'new_production', 'excerpt' );
+add_post_type_support( 'new_production', 'thumbnail' );
+
+//enable bootstrap css, js
+function reg_scripts() {
+    wp_enqueue_style( 'bootstrapstyle', get_template_directory_uri() . '/css/bootstrap.css' );
+    wp_enqueue_style( 'bootstrapthemestyle', get_template_directory_uri() . '/css/bootstrap-theme.css' );
+    wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/bootstrap.min.js', array(), true );
+}
+add_action('wp_enqueue_scripts', 'reg_scripts');
+>>>>>>> styles, bootstrap
 
 ?>
