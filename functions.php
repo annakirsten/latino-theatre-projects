@@ -54,4 +54,23 @@ function get_my_title_tag () {
 	echo 'Seattle, WA.';
 }
 
+// Custom Post type
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+    register_post_type( 'new_production',
+        array(
+        'labels' => array(
+        'name' => __( 'Productions' ),
+        'singular_name' => __( 'Production' )
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'productions'),
+        )
+    );
+}
+add_post_type_support( 'new_production', 'excerpt' );
+add_post_type_support( 'new_production', 'thumbnail' );
+//
+
 ?>
