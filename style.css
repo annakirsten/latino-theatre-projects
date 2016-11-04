@@ -14,11 +14,19 @@ Version: 1.0
 }
 
 html {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-a {
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+a:link, a:visited, a:active, a:hover {
 	color: #000000;
+    text-decoration: none;
 }
 
 li {
@@ -33,6 +41,7 @@ img {
 /*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
 
 nav {
+    width: 100%;
 	clear: both;
 	height: auto;
 	overflow: hidden;
@@ -40,17 +49,17 @@ nav {
 }
 
 nav ul {
-	width: 100%;
-	margin: 0 auto;
+	width: 66.666666%;
+    float: right;
 }
 
 nav li {
-	float: left;
-    width: 18%;
+	float: right;
+    width: 17.65%;
 	list-style-type: none;
 	text-align: center;
 	line-height: 40px;
-	/*font-size: 1.5em;*/
+	font-size: .875em;
 	margin-left: 2%;
     border: 1px solid #000000;
 }
@@ -87,7 +96,7 @@ nav li a {
 	width: 100%;
 	float: none;
 	text-align: left;
-	/*font-size: .875em;*/
+	font-size: .875em;
 	border-bottom: 1px solid #000000;
 }
 
@@ -104,6 +113,90 @@ nav li a {
 
 li.nav-on   {
 	background: #FFFFFF;
+}
+
+/*++++++++++++++++++++++++++++++++header++++++++++++++++++++++++++++++++*/
+
+header {
+    clear: both;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 200px;
+}
+
+header .container {
+    float: right;
+}
+
+.social {
+    display: block;
+}
+
+.social li {
+    float: right;
+    width: 30px;
+    margin-left: 15px;
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+}
+
+.donate {
+    display: block;
+    width: 200px;
+    height: 75px;
+    line-height: 75px;
+    border: 1px black solid;
+    text-align: center;
+    margin-top: 90px;
+}
+
+/*++++++++++++++++++++++++++++++++content++++++++++++++++++++++++++++++++*/
+
+#content{
+    clear: both;
+    margin-top: 30px;
+}
+
+#main {
+    float: left;
+    width: 620px;
+}
+
+#feature p {
+    margin-bottom: 20px;
+}
+
+#content a img.attachment-thumbnail {
+    float: left;
+    max-width: 140px;
+    max-height: 140px;
+    margin-right: 20px;
+    padding: 4px;
+}
+
+#content h3 {
+    clear: none;
+    padding-top: .2em;
+}
+
+.button.go-to-blog {
+    margin: 25px auto;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+aside {
+    float: right;
+    width: 280px;
 }
 
 /*++++++++++++++++++++++++++++++++footer++++++++++++++++++++++++++++++++*/
@@ -125,7 +218,6 @@ footer li {
 	line-height: 50px;
 	margin-right: 20px;
 }
-
 
 /*++++++++++++++++++++++++++++++++typography++++++++++++++++++++++++++++++++*/
 

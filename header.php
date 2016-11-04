@@ -10,19 +10,15 @@
     
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
         
     <!-- STYLES -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all">  <!-- stylesheet -->
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  <!-- google fonts -->
     
-    <!-- bootstrap css -->
-    
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>  <!-- jquery -->
-    
-    <!-- bootstrap js -->
     
     <!-- WP HEAD -->
     <?php wp_head(); ?>
@@ -31,15 +27,29 @@
 
 <body <?php body_class(); ?>>
     
-<header>
-    
-</header>
+    <nav>
+        <?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
+    </nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-8">
-<?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
+    <header>
+        <div class="logo">
+            <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
         </div>
-    </div>
-</div>
+
+        <div class="container">
+            <div class="social">
+                <ul>
+                    <li>i</li>
+                    <li>f</li>
+                    <li>t</li>
+                </ul>
+            </div>
+            <div class="donate">
+                <p>DONATE</p>
+            </div>
+        </div>
+    </header>
+
+    
+    
+    
