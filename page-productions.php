@@ -5,10 +5,9 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
 <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
 <?php the_content('');?>
-<?php endwhile; endif;?>
-
+<?php endwhile; endif;?>    
     
- <small>Latest Productions:</small>
+ <small>Productions:</small>
     <?php rewind_posts(); // stop loop one ?>
     <?php query_posts('post_type=new_production'); // show productions ?>
     <?php if (have_posts()) : ?>
@@ -23,7 +22,6 @@
     <?php endwhile; ?>
     <?php endif; ?>
 
-    
 <p>page-productions.php</p>
 </main>
 <?php get_sidebar(); ?>
