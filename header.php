@@ -14,11 +14,20 @@
         
     <!-- STYLES -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all">  <!-- stylesheet -->
-    
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>css/flexslider.css" type="text/css"/>  <!--flexslider css-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  <!-- google fonts -->
     
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>  <!-- jquery -->
+    <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>  <!--flexslider js-->
+    <script>
+        $(document).ready(function() {
+            $('.flexslider').flexslider();
+            $("#toggle").click(function() {
+                $("#navigation").toggle();
+            });
+        });
+    </script>
     
     <!-- WP HEAD -->
     <?php wp_head(); ?>
@@ -27,28 +36,30 @@
 
 <body <?php body_class(); ?>>
     
-    <nav>
+    <!--start toggle -->
+    <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/toggle.png" alt="Toggle Menu">
+    <!--end toggle -->
+    
+    <div id="header">
         <?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
-    </nav>
 
-    <header>
-        <div class="logo">
+        <div id="logo">
             <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
         </div>
 
         <div class="container">
-            <div class="social">
+            <div id="social">
                 <ul>
                     <li>i</li>
                     <li>f</li>
                     <li>t</li>
                 </ul>
             </div>
-            <div class="donate">
+            <div id="donate">
                 <p>DONATE</p>
             </div>
         </div>
-    </header>
+    </div>
 
     
     

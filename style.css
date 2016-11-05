@@ -14,14 +14,11 @@ Version: 1.0
 }
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    
 }
 
 body {
-    max-width: 960px;
-    margin: 0 auto;
+    
 }
 
 a:link, a:visited, a:active, a:hover {
@@ -38,9 +35,56 @@ img {
     max-width: 100%;
 }
 
+/*++++++++++++++++++++++++++++++++header++++++++++++++++++++++++++++++++*/
+
+#header {
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+}
+
+#header .container {
+    float: right;
+}
+
+#social {
+    display: block;
+}
+
+#social li {
+    float: right;
+    width: 30px;
+    margin-left: 15px;
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+}
+
+#donate {
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px black solid;
+    text-align: center;
+    margin-top: 90px;
+}
+
 /*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
 
-nav {
+#toggle {
+	display:none;
+}
+
+#navigation {
     width: 100%;
 	clear: both;
 	height: auto;
@@ -48,23 +92,26 @@ nav {
     padding-top: 20px;
 }
 
-nav ul {
+#navigation ul {
 	width: 66.666666%;
     float: right;
 }
 
-nav li {
+#navigation li {
 	float: right;
-    width: 17.65%;
+    width: 18%;
 	list-style-type: none;
 	text-align: center;
 	line-height: 40px;
 	font-size: .875em;
 	margin-left: 2%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     border: 1px solid #000000;
 }
 
-nav li a {
+#navigation li a {
     text-transform: uppercase;
 	display: block;
 }
@@ -115,50 +162,11 @@ li.nav-on   {
 	background: #FFFFFF;
 }
 
-/*++++++++++++++++++++++++++++++++header++++++++++++++++++++++++++++++++*/
-
-header {
-    clear: both;
-    overflow: hidden;
-}
-
-.logo {
-    float: left;
-    width: 200px;
-}
-
-header .container {
-    float: right;
-}
-
-.social {
-    display: block;
-}
-
-.social li {
-    float: right;
-    width: 30px;
-    margin-left: 15px;
-	list-style-type: none;
-	text-align: center;
-	line-height: 30px;
-    border: 1px solid #000000;
-    margin-top: 30px;
-}
-
-.donate {
-    display: block;
-    width: 200px;
-    height: 75px;
-    line-height: 75px;
-    border: 1px black solid;
-    text-align: center;
-    margin-top: 90px;
-}
-
 /*++++++++++++++++++++++++++++++++content++++++++++++++++++++++++++++++++*/
 
 #content{
+    max-width: 960px;
+    margin: 0 auto;
     clear: both;
     margin-top: 30px;
 }
@@ -187,10 +195,13 @@ header .container {
 
 .button.go-to-blog {
     margin: 25px auto;
-    width: 300px;
+    width: 100%;
     height: 50px;
     line-height: 50px;
     text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     border: 1px solid #000000;
 }
 
@@ -201,22 +212,49 @@ aside {
 
 /*++++++++++++++++++++++++++++++++footer++++++++++++++++++++++++++++++++*/
 
-footer {
-	clear: both;
-	height: 50px;
+#footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow: hidden;
+    clear: both;
 	background: #FFFFFF;
 }
 
-footer ul {
-	width: 100%;
+#footer-nav, #footer-copy {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #000000;
 }
 
-footer li {
-	float: right;
+#footer ul {
+    width: 60%;
+    height: 300px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+#footer li {
+	float: left;
 	list-style-type: none;
 	text-align: center;
-	line-height: 50px;
-	margin-right: 20px;
+	line-height: 30px;
+    padding: 0 15px;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-right: 1px solid #000000;
+}
+
+#footer-nav ul li:last-child, #footer-copy ul li:last-child {
+	border-right: none;
 }
 
 /*++++++++++++++++++++++++++++++++typography++++++++++++++++++++++++++++++++*/
@@ -265,5 +303,61 @@ p {
 	margin-bottom: .5em;
 }
 
+/*++++++++++++++++++++++++++++++++media queries++++++++++++++++++++++++++++++++*/
+
+/* Desktop Screen set to 960px or below */
+@media screen and (max-width: 960px) {
+
+}
+
+/* Tablet Screen set to 800px or below */
+@media screen and (max-width: 800px) {
+    
+    #toggle {
+		display: block;
+		float: right;
+		width: 50px;
+		margin-top: 20px;
+		margin-right: 25px;
+		}
+	
+	#menu-main-menu > li:hover ul.sub-menu {
+		display: none;
+		}
+	
+	#navigation {
+		display: none;
+		}
+    
+    #navigation ul {
+        width: 100%;
+    }
+	
+	#navigation ul li {
+		float: none;
+		padding: 10px 40px;
+		width: auto;
+		text-align: left;
+		font-size: 1.5em;
+		margin: 0;
+		}
+		
+	#navigation ul li:last-child {
+		border-bottom: 1px solid #000000;
+		}
+	
+	#navigation ul li a {
+		display: block;
+		}
+	
+	#navigation li.mobile {
+		display: block;
+		}
+}
+
+/* Mobile Screen set to 600px or below */
+@media screen and (max-width: 600px) {
+    
+}
 
 
