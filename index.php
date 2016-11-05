@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
+<div id="content">
 
+    <div id="main">
 <article class="post-excerpt">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
     <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
@@ -12,6 +14,8 @@
 </article>
     
 <p>index.php</p>
+    </div>
 
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

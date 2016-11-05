@@ -14,7 +14,7 @@
         
     <!-- STYLES -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all">  <!-- stylesheet -->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>css/flexslider.css" type="text/css"/>  <!--flexslider css-->
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider.css" type="text/css"/>  <!--flexslider css-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  <!-- google fonts -->
     
     <!-- SCRIPTS -->
@@ -51,7 +51,7 @@
             <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
         </div>
 
-        <div class="container">
+        <div class="social-donate-dt">
             <div id="social">
                 <ul>
                     <li>i</li>
