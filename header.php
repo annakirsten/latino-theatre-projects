@@ -36,6 +36,10 @@
 
 <body <?php body_class(); ?>>
     
+    <div id="logo-mb">
+        <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
+    </div>
+    
     <!--start toggle -->
     <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/toggle.png" alt="Toggle Menu">
     <!--end toggle -->
@@ -43,7 +47,7 @@
     <div id="header">
         <?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
 
-        <div id="logo">
+        <div id="logo-dt">
             <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
         </div>
 
