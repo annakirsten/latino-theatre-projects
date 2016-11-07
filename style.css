@@ -82,6 +82,10 @@ img {
     margin-top: 90px;
 }
 
+#donate.mb {
+    display: none;
+}
+
 /*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
 
 #toggle {
@@ -178,6 +182,10 @@ li.nav-on   {
 #main {
     float: left;
     width: 620px;
+}
+
+#main .blog-excerpt p {
+    margin-bottom: 30px;
 }
 
 p.home.top-mb {
@@ -319,8 +327,8 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2.441em;
-    padding-top :.4em;
-    margin-bottom: .5em;
+    padding-top :.2em;
+    margin-bottom: .4em;
 }
 
 h2 {
@@ -350,6 +358,34 @@ p {
 /* Desktop Screen set to 960px or below */
 @media screen and (max-width: 960px) {
 
+    #navigation ul {
+        width: 100%;
+    }
+    
+    #header {
+        margin: 0 20px;
+    }
+    
+    #content {
+        margin: 30px 20px 0 20px;
+    }
+    
+    #main {
+        width: 64.583333%;
+    }
+    
+    #aside {
+        width: 29.166666%;
+    }
+}
+
+/* Tablet Screen set to 920px or below */
+@media screen and (max-width: 920px) {
+    
+    #footer ul {
+        width: auto;
+    }
+    
 }
 
 /* Tablet Screen set to 800px or below */
@@ -401,10 +437,6 @@ p {
         border:none;
         border-bottom: 1px solid #000000;
     }
-		
-	#navigation ul li:last-child {
-		
-	}
 	
 	#navigation ul li a {
 		display: block;
@@ -414,6 +446,7 @@ p {
         float: none;
         width: 85%;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     
     p.home.top-dt {
@@ -425,20 +458,46 @@ p {
         font-size: 1.2em;
     }
     
+    #donate.mb {
+        display: block;
+        margin: 20px auto;
+    }
+    
     #aside {
         float: none;
         width: 85%;
         margin: 0 auto;
-    }
-    
-    #footer ul {
-        width: 70%;
+        margin-bottom: 20px;
     }
     
 }
 
 /* Mobile Screen set to 600px or below */
 @media screen and (max-width: 600px) {
+    
+    #main {
+        width: 100%;
+    }
+    
+    #aside {
+        width: 100%;
+    }
+    
+    #footer ul {
+        height: auto;
+        padding: 5px 0;
+    }
+    
+    #footer-nav, #footer-copy {
+        height: auto;
+    }
+    
+    #footer li {
+        float: none;
+        border: none;
+        padding: 5px 0 5px 20px;
+        text-align: left;
+    }
     
 }
 

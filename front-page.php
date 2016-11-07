@@ -34,6 +34,10 @@
         <!-- End Flex Slider -->
         
         <p class="home top-mb">WHAT WE DO Ficabore ptaepedi alique nation exceped magnatur re simagnatem quis de minis adis enisitiandic tempos incia sunti ditin net inciatur aspis magnatu rionseque si omnis.</p>
+        
+        <div id="donate" class="mb">
+            <p>DONATE</p>
+        </div>
 
         <div id="recent-posts">
             <h2>Recent Blog Posts</h2>
@@ -49,7 +53,7 @@
             <?php endwhile; endif; //end the loop ?>
 
             <div class="button go-to-blog">
-                <div><a href="<?php bloginfo('url'); ?>/blog.php">Go to our Blog page</a></div>
+                <div><a href="<?php bloginfo('url'); ?>/blog">Go to our Blog page</a></div>
             </div>
         </div>
 

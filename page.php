@@ -1,12 +1,23 @@
 <?php get_header(); ?>
-<main>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post();?>
-<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
-<?php the_content('');?>
-<?php endwhile; endif;?>
+<div id="content">
 
-<p>page.php</p>
-</main>
-<?php get_sidebar(); ?>
+    <div id="main">
+
+        <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
+
+        <h1><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h1>
+
+        <?php the_content(''); ?>
+
+        <?php endwhile; endif; //end the loop ?>
+
+        <p>page.php</p>
+        
+    </div>
+    
+    <?php get_sidebar(); ?>
+    
+</div>
+    
 <?php get_footer(); ?>

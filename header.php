@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     
-    <title><?php get_my_title_tag();?></title>
+    <title><?php get_my_title_tag(); ?></title>
     
     <!-- META -->
-    <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
+    <meta name="description" content="<?php echo get_the_excerpt(); //display page excerpt ?>"/>
     
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     
@@ -34,7 +34,7 @@
     
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($class); ?>>
     
     <div id="logo-mb">
         <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>

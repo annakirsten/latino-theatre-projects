@@ -41,6 +41,10 @@ function get_my_title_tag () {
 	elseif (is_page() || is_single()){
 		the_title();
 	}
+    elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title();
+        the_title ();
+    }
 	else {	
 		bloginfo('description');
 	}
@@ -61,18 +65,21 @@ add_action( 'init', 'create_post_type' );
 function create_post_type() {
     register_post_type( 'new_production',
         array(
-        'labels' => array(
-        'name' => __( 'Productions' ),
-        'singular_name' => __( 'Production' )
-        ),
-        'public' => true,
-        'has_archive' => true,
-        'rewrite' => array('slug' => 'productions'),
+            'labels' => array(
+                'name' => __( 'Productions' ),
+                'singular_name' => __( 'Production' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'productions'),
         )
     );
 }
+
 add_post_type_support( 'new_production', 'excerpt' );
 add_post_type_support( 'new_production', 'thumbnail' );
+add_post_type_support( 'new_production', 'title' );
+
 /*
 //meta boxes
 add_filter( 'rwmb_meta_boxes', 'your_prefix_meta_boxes' );
@@ -111,6 +118,7 @@ function your_prefix_meta_boxes( $meta_boxes ) {
 }
 */
 //register meta box
+
 add_filter( 'rwmb_meta_boxes', 'YOURPREFIX_register_meta_boxes' );
 function YOURPREFIX_register_meta_boxes( $meta_boxes ) {
     $prefix = 'rw_';
