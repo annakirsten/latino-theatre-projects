@@ -54,13 +54,13 @@
         <div class="social-donate-dt">
             <div id="social">
                 <ul>
-                    <li>i</li>
-                    <li>f</li>
-                    <li>t</li>
+                    <li><a href="#">i</a></li>
+                    <li><a href="#">f</a></li>
+                    <li><a href="#">t</a></li>
                 </ul>
             </div>
             <div id="donate">
-                <p>DONATE</p>
+                <p><a href="<?php bloginfo('url'); ?>/#">Donate</a></p>
             </div>
         </div>
     </div>

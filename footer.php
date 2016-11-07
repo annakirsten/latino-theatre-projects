@@ -12,7 +12,7 @@
 
         <div id="footer-copy">
             <ul>
-                <li>&copy;2016 Latino Theater Projects</li>
+                <li>&copy;<?php echo date("Y"); ?> Latino Theater Projects</li>
                 <li><a href="<?php bloginfo('url'); ?>/#">Privacy Policy</a></li>
                 <li><a href="<?php bloginfo('url'); ?>/#">Legal</a></li>
                 <li><?php wp_loginout(); ?></li>

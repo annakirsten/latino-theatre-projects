@@ -36,7 +36,7 @@
         <p class="home top-mb">WHAT WE DO Ficabore ptaepedi alique nation exceped magnatur re simagnatem quis de minis adis enisitiandic tempos incia sunti ditin net inciatur aspis magnatu rionseque si omnis.</p>
         
         <div id="donate" class="mb">
-            <p>DONATE</p>
+            <p><a href="<?php bloginfo('url'); ?>/#">Donate</a></p>
         </div>
 
         <div id="recent-posts">
