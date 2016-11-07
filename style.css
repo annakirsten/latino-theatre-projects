@@ -98,6 +98,7 @@ img {
 
 #navigation {
     width: 100%;
+    display: block;
 	clear: both;
 	height: auto;
 	overflow: hidden;

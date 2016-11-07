@@ -21,10 +21,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>  <!-- jquery -->
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>  <!--flexslider js-->
     <script>
-        $(document).ready(function() {
+        $(window).load(function() {
             $('.flexslider').flexslider();
+            
             $("#toggle").click(function() {
                 $("#navigation").toggle();
+            });
+            
+            var loadWidth = window.innerWidth;
+            
+            $(window).resize(function() {
+                if ( loadWidth !== window.innerWidth ) {
+                    if (window.innerWidth <= 800) {
+                        $("#navigation").hide();
+                    } else  {
+                        $("#navigation").show();
+                    }
+                }
             });
         });
     </script>
@@ -34,7 +47,7 @@
     
 </head>
 
-<body <?php body_class($class); ?>>
+<body <?php body_class(); ?>>
     
     <div id="logo-mb">
         <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
