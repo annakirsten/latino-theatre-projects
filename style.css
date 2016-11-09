@@ -14,11 +14,16 @@ Version: 1.0
 }
 
 html {
-    box-sizing: border-box;
+    
 }
 
-a {
+body {
+    
+}
+
+a:link, a:visited, a:active, a:hover {
 	color: #000000;
+    text-decoration: none;
 }
 
 li {
@@ -30,32 +35,96 @@ img {
     max-width: 100%;
 }
 
+/*++++++++++++++++++++++++++++++++header++++++++++++++++++++++++++++++++*/
+
+#header {
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+
+#logo-dt {
+    float: left;
+    width: 200px;
+}
+
+#logo-mb {
+    display: none;
+}
+
+.social-donate-dt {
+    float: right;
+}
+
+#social {
+    display: block;
+}
+
+#social li {
+    float: right;
+    width: 30px;
+    margin-left: 15px;
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+    border: 1px solid #000000;
+    margin-top: 30px;
+}
+
+#donate {
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px black solid;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#donate.mb {
+    display: none;
+}
+
+#donate a, #donate.mb a, #social a {
+    display: block;
+}
+
 /*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
 
-nav {
+#toggle {
+	display:none;
+}
+
+#navigation {
+    width: 100%;
+    display: block;
 	clear: both;
 	height: auto;
 	overflow: hidden;
     padding-top: 20px;
 }
 
-nav ul {
-	width: 100%;
-	margin: 0 auto;
+#navigation ul {
+	width: 66.666666%;
+    float: right;
 }
 
-nav li {
+#navigation li {
 	float: left;
     width: 18%;
 	list-style-type: none;
 	text-align: center;
 	line-height: 40px;
-	/*font-size: 1.5em;*/
+	font-size: .875em;
 	margin-left: 2%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     border: 1px solid #000000;
 }
 
-nav li a {
+#navigation li a {
     text-transform: uppercase;
 	display: block;
 }
@@ -87,7 +156,7 @@ nav li a {
 	width: 100%;
 	float: none;
 	text-align: left;
-	/*font-size: .875em;*/
+	font-size: .875em;
 	border-bottom: 1px solid #000000;
 }
 
@@ -106,26 +175,142 @@ li.nav-on   {
 	background: #FFFFFF;
 }
 
+/*++++++++++++++++++++++++++++++++content++++++++++++++++++++++++++++++++*/
+
+#content{
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    margin-top: 30px;
+}
+
+#main {
+    float: left;
+    width: 620px;
+}
+
+#main .blog-excerpt p {
+    margin-bottom: 30px;
+}
+
+p.home.top-mb {
+    display: none;
+}
+
+p.slider-caption {
+	z-index:50;	
+	position:absolute;
+	top:30px;
+	left:40px;
+	max-width:400px;
+	font-size:1.6em;
+	font-weight:700;
+	color:#FFFFFF;
+	font-style:italic;
+	text-shadow: 3px 3px 10px #231f20;
+}
+	
+button.slider-button {
+	z-index: 50px;
+	position:absolute;
+	right:50px;
+	bottom:50px;
+	display:block;
+	font-variant:small-caps;
+	color: #000000;
+	font-size:1.6em;
+	box-shadow: 2px 2px 0px #231f20;
+	padding: 10px 20px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 2px solid #000000;
+	background: #FFFFFF;
+	cursor:pointer;
+}
+
+button.slider-button:hover {
+	color: #000000;
+	background: #FFFFFF;
+	border: 2px solid #000000;
+}
+
+#content a img.attachment-thumbnail {
+    float: left;
+    max-width: 140px;
+    max-height: 140px;
+    margin-right: 20px;
+    padding: 4px;
+}
+
+#content h3 {
+    clear: none;
+    padding-top: .2em;
+}
+
+.button.go-to-blog {
+    margin: 25px auto;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+#aside {
+    float: right;
+    width: 280px;
+}
+
 /*++++++++++++++++++++++++++++++++footer++++++++++++++++++++++++++++++++*/
 
-footer {
-	clear: both;
-	height: 50px;
+#footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow: hidden;
+    clear: both;
 	background: #FFFFFF;
 }
 
-footer ul {
-	width: 100%;
+#footer-nav, #footer-copy {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #000000;
 }
 
-footer li {
-	float: right;
+#footer ul {
+    width: 60%;
+    height: 30px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+#footer li {
+	float: left;
 	list-style-type: none;
 	text-align: center;
-	line-height: 50px;
-	margin-right: 20px;
+	line-height: 30px;
+    padding: 0 15px;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-right: 1px solid #000000;
 }
 
+#footer-nav ul li:last-child, #footer-copy ul li:last-child {
+	border-right: none;
+}
 
 /*++++++++++++++++++++++++++++++++typography++++++++++++++++++++++++++++++++*/
 
@@ -147,8 +332,8 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2.441em;
-    padding-top :.4em;
-    margin-bottom: .5em;
+    padding-top :.2em;
+    margin-bottom: .4em;
 }
 
 h2 {
@@ -173,5 +358,152 @@ p {
 	margin-bottom: .5em;
 }
 
+/*++++++++++++++++++++++++++++++++media queries++++++++++++++++++++++++++++++++*/
+
+/* Desktop Screen set to 960px or below */
+@media screen and (max-width: 960px) {
+
+    #navigation ul {
+        width: 75%;
+    }
+    
+    #header {
+        margin: 0 20px;
+    }
+    
+    #content {
+        margin: 30px 20px 0 20px;
+    }
+    
+    #main {
+        width: 64.583333%;
+    }
+    
+    #aside {
+        width: 29.166666%;
+    }
+}
+
+/* Tablet Screen set to 920px or below */
+@media screen and (max-width: 920px) {
+    
+    #footer ul {
+        width: auto;
+    }
+    
+}
+
+/* Tablet Screen set to 800px or below */
+@media screen and (max-width: 800px) {
+    
+    #logo-mb {
+        display: block;
+		width: 70px;
+		float: left;
+		margin-top: 15px;
+		margin-left: 20px;
+    }
+    
+    #logo-dt {
+        display: none;
+    }
+    
+    #toggle {
+		display: block;
+		float: right;
+		width: 50px;
+		margin-top: 20px;
+		margin-right: 25px;
+	}
+    
+    .social-donate-dt {
+        display: none;
+    }
+	
+	#menu-main-menu > li:hover ul.sub-menu {
+		display: none;
+	}
+	
+	#navigation {
+		display: none;
+	}
+    
+    #navigation ul {
+        width: 100%;
+    }
+	
+	#navigation ul li {
+		float: none;
+		padding: 10px 40px;
+		width: auto;
+		text-align: left;
+		font-size: 1.5em;
+		margin: 0;
+        border:none;
+        border-bottom: 1px solid #000000;
+    }
+	
+	#navigation ul li a {
+		display: block;
+	}
+    
+    #main {
+        float: none;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    p.home.top-dt {
+        display: none;
+    }
+    
+    p.home.top-mb {
+        display: block;
+        font-size: 1.2em;
+    }
+    
+    #donate.mb {
+        display: block;
+        margin: 20px auto;
+    }
+    
+    #aside {
+        float: none;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+}
+
+/* Mobile Screen set to 600px or below */
+@media screen and (max-width: 600px) {
+    
+    #main {
+        width: 100%;
+    }
+    
+    #aside {
+        width: 100%;
+    }
+    
+    #footer ul {
+        height: auto;
+        padding: 5px 0;
+    }
+    
+    #footer-nav, #footer-copy {
+        height: auto;
+    }
+    
+    #footer li {
+        float: none;
+        border: none;
+        padding: 5px 0 5px 20px;
+        text-align: left;
+    }
+    
+}
 
 
