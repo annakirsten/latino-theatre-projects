@@ -3,17 +3,6 @@
 <div id="content">
 
     <div id="main">
-        
-        <h1>
-            <?php 
-            if ( is_post_type_archive() ) {
-                post_type_archive_title();  
-            }
-            else {
-                single_post_title();
-            }
-            ?>
-        </h1>
 
         <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
 
