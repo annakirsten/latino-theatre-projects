@@ -57,11 +57,11 @@ img {
     float: right;
 }
 
-#social {
+.social {
     display: block;
 }
 
-#social li {
+.social li {
     float: right;
     width: 30px;
     margin-left: 15px;
@@ -72,7 +72,7 @@ img {
     margin-top: 30px;
 }
 
-#donate {
+.button {
     display: block;
     width: 200px;
     height: 60px;
@@ -82,12 +82,12 @@ img {
     margin-top: 90px;
 }
 
-#donate.mb {
-    display: none;
+.button a {
+    display: block;
 }
 
-#donate a, #donate.mb a, #social a {
-    display: block;
+.donate-mb {
+    display: none;
 }
 
 /*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
@@ -263,6 +263,30 @@ button.slider-button:hover {
 #aside {
     float: right;
     width: 280px;
+}
+
+/*++++++++++++++++++++++++++++++++sidebar++++++++++++++++++++++++++++++++*/
+
+#search h3 {
+    margin-bottom: 8px;
+}
+
+#search .search-field {
+    border: 1px solid #000000;
+    height: 25px;
+    margin-bottom: 5px;
+    padding: 4px;
+}
+
+#search input[type=image] {
+    width: 20px;
+    margin-left: 5px;
+    margin-bottom: -5px;
+}
+
+#aside .button {
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 /*++++++++++++++++++++++++++++++++footer++++++++++++++++++++++++++++++++*/
@@ -463,7 +487,7 @@ p {
         font-size: 1.2em;
     }
     
-    #donate.mb {
+    .donate-mb {
         display: block;
         margin: 20px auto;
     }

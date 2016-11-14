@@ -65,14 +65,14 @@
         </div>
 
         <div class="social-donate-dt">
-            <div id="social">
+            <div class="social">
                 <ul>
                     <li><a href="#">i</a></li>
                     <li><a href="#">f</a></li>
                     <li><a href="#">t</a></li>
                 </ul>
             </div>
-            <div id="donate">
+            <div class="donate button">
                 <p><a href="<?php bloginfo('url'); ?>/#">Donate</a></p>
             </div>
         </div>
