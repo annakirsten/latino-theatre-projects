@@ -285,18 +285,23 @@ button.slider-button:hover {
 #search .search-field {
     display: block;
     border: 1px solid #000000;
-    height: 25px;
     margin-bottom: 5px;
-    padding: 4px;
+    padding: 6px;
     width: 80%;
+    border-radius: 6px;
 }
 
-#search input[type=button] {
+#search input[type=submit] {
     border: 1px solid #000000;
     background: #FFFFFF;
-    padding: 5px;
+    padding: 6px;
     float: right;
     margin-right: 20%;
+    border-radius: 6px;
+}
+
+#aside li {
+    list-style-type: none;
 }
 
 #aside .button {
