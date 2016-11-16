@@ -130,13 +130,14 @@ img {
 }
 
 #menu-main-menu li:hover {
-    
+	/*background: #FFFFFF;*/
 }
 
 #menu-main-menu ul.sub-menu {
 	text-align: left;
 	position: absolute;
 	display: none;
+	/*background-color: #FFFFFF;*/
 	z-index: 60;
 	width: auto;
 }
@@ -147,6 +148,7 @@ img {
 
 #menu-main-menu > li:hover ul.sub-menu {
 	display: block;
+	/*border-top: 4px solid #000000;*/
 }
 
 #menu-main-menu ul.sub-menu li {
@@ -241,7 +243,7 @@ button.slider-button:hover {
     padding: 4px;
 }
 
-#content h3 {
+#main h3 {
     clear: none;
     padding-top: .2em;
 }
@@ -265,17 +267,30 @@ button.slider-button:hover {
 
 /*++++++++++++++++++++++++++++++++sidebar++++++++++++++++++++++++++++++++*/
 
+#search h3 {
+    margin-bottom: 8px;
+    clear: both;
+}
+
+#search .offscreen {
+    overflow: hidden;
+}
+
 #search .search-field {
+    display: block;
     border: 1px solid #000000;
     height: 25px;
     margin-bottom: 5px;
     padding: 4px;
+    width: 215px;
 }
 
-#search input[type=image] {
-    width: 20px;
-    margin-left: 5px;
-    margin-bottom: -5px;
+#search input[type=button] {
+    border: 1px solid #000000;
+    background: #FFFFFF;
+    padding: 5px;
+    float: right;
+    margin-right: 30px;
 }
 
 #aside .button {
@@ -343,6 +358,7 @@ body {
 
 h1, h2, h3, h4 {    
 	line-height: 1.2;
+	/*font-weight: lighter;*/
 	font-variant: small-caps;
 	clear: both;
 }
