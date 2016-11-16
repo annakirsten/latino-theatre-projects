@@ -288,13 +288,7 @@ button.slider-button:hover {
     height: 25px;
     margin-bottom: 5px;
     padding: 4px;
-    width: 215px;
-}
-
-#search input[type=image] {
-    width: 20px;
-    margin-left: 5px;
-    margin-bottom: -5px;
+    width: 80%;
 }
 
 #search input[type=button] {
@@ -302,7 +296,7 @@ button.slider-button:hover {
     background: #FFFFFF;
     padding: 5px;
     float: right;
-    margin-right: 30px;
+    margin-right: 20%;
 }
 
 #aside .button {
