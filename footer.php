@@ -23,7 +23,7 @@
 
     <?php wp_footer(); ?>
 
-<!-- check -->
+<!-- Fuck Trump. -->
 
 </body>
     
