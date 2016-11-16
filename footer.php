@@ -23,6 +23,8 @@
 
     <?php wp_footer(); ?>
 
+<!-- check -->
+
 </body>
     
 </html>
