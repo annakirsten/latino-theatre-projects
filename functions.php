@@ -55,5 +55,4 @@ function get_my_title_tag () {
 	echo ' | ';
 	echo 'Seattle, WA.';
 }
-
 ?>
