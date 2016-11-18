@@ -16,6 +16,7 @@
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all">  <!-- stylesheet -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider.css" type="text/css"/>  <!--flexslider css-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> <!-- google fonts -->
     
     <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>  <!-- jquery -->
@@ -50,7 +51,7 @@
 <body <?php body_class(); ?>>
     
     <div id="logo-mb">
-        <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
+        <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_horz_reverse.eps" alt="logo"></a>
     </div>
     
     <!--start toggle -->
@@ -61,7 +62,7 @@
         <?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
 
         <div id="logo-dt">
-            <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"></a>
+            <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_vert_RGB.svg" alt="logo"></a>
         </div>
 
         <div class="social-donate-dt">

@@ -63,7 +63,7 @@ img {
 
 #logo-dt {
     float: left;
-    width: 200px;
+    width: 300px;
 }
 
 #logo-mb {
@@ -114,12 +114,14 @@ img {
 }
 
 #navigation {
+    margin: 10px 0px 20px 0px;
+    background-color: #688f86;
     width: 100%;
     display: block;
 	clear: both;
 	height: auto;
 	overflow: hidden;
-    padding-top: 20px;
+    padding-left: 50px;
 }
 
 #navigation ul {
@@ -134,16 +136,17 @@ img {
 	text-align: center;
 	line-height: 40px;
 	font-size: .875em;
-	margin-left: 2%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border: 1px solid #000000;
+    border-left: 1px solid #fff;
 }
 
 #navigation li a {
+    color: #fff;
     text-transform: uppercase;
 	display: block;
+    font-size: 80%;
 }
 
 #menu-main-menu li:hover {
@@ -378,10 +381,9 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4 {    
+h1, h2, h3, h4 { 
+    font-family: 'Teko', sans-serif;
 	line-height: 1.2;
-	/*font-weight: lighter;*/
-	font-variant: small-caps;
 	clear: both;
 }
 
