@@ -82,6 +82,4 @@ function get_child_pages() {
         
 }
 
-
-
 ?>
