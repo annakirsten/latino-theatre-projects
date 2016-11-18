@@ -1,6 +1,7 @@
 <div id="footer">
 
     <div id="footer-nav">
+        
         <ul>
             <li><a href="<?php bloginfo('url'); ?>/contact">Contact</a></li>
             <ul>
@@ -33,18 +34,22 @@
                     <li><a href="<?php bloginfo('url'); ?>/mission">Mission Statement</a></li>
                 </ul>
             </div>
-            <div id= "footer-copy">
-                <ul>
-                    <li>&copy;<?php echo date("Y"); ?> Latino Theater Projects</li>
-                    <li><a href="<?php bloginfo('url'); ?>/#">Privacy Policy</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/#">Legal</a></li>
-                    <li><?php wp_loginout(); ?></li>
-                </ul>
-            </div>
         </ul>
-    </div>
+        
+    </div> <!-- end footer-nav -->
     
-    <?php wp_footer(); ?>
+    <div id= "footer-copy">
+        <ul>
+            <li>&copy;<?php echo date("Y"); ?> Latino Theater Projects</li>
+            <li><a href="<?php bloginfo('url'); ?>/#">Privacy Policy</a></li>
+            <li><a href="<?php bloginfo('url'); ?>/#">Legal</a></li>
+            <li><?php wp_loginout(); ?></li>
+        </ul>
+    </div> <!-- end footer-copy -->
+    
+</div> <!-- end footer -->
+    
+<?php wp_footer(); ?>
     
 </body>
     
