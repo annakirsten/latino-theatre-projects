@@ -50,7 +50,7 @@
         <?php endif; ?><!-- End compare if --> 
         <?php endwhile; ?><!-- End Current Productions while -->
         <?php endif; ?> <!-- End Current Productions if -->
-        <!-- End Current Productions Loop -->        
+        <!-- End Current Productions Loop -->
         
         
         <h1>Past Productions:</h1>
@@ -98,12 +98,6 @@
         <?php endwhile; ?><!-- End Past Productions while -->
         <?php endif; ?> <!-- End Past Productions if -->
         <!-- End Past Productions Loop -->
-        
-        
-        
-        
-        
-        
 
         <small>page-productions.php</small>
         
