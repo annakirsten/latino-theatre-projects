@@ -85,7 +85,6 @@ img {
 	list-style-type: none;
 	text-align: center;
 	line-height: 30px;
-    border: 1px solid #000000;
     margin-top: 30px;
 }
 
@@ -114,7 +113,7 @@ img {
 }
 
 #navigation {
-    margin: 10px 0px 20px 0px;
+    margin-bottom: 20px;
     background-color: #688f86;
     width: 100%;
     display: block;
