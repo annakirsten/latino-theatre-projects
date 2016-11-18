@@ -56,4 +56,32 @@ function get_my_title_tag () {
 	echo 'Seattle, WA.';
 }
 
+//get child pages
+function get_child_pages() {
+	
+	global $post; // set global variable
+	
+	rewind_posts(); // stop previous loops 
+	query_posts(array('post_type' => 'page', 'posts_per_page' => -1, 'post_status' => publish,'post_parent' => $post->ID,'order' => 'ASC','orderby' => 'menu_order')); // query & order child pages 
+    
+	while (have_posts()) : the_post(); 
+	
+		$childPermalink = get_permalink( $post->ID ); // post permalink
+		$childID = $post->ID; // post id
+		$childTitle = $post->post_title; // post title
+		$childExcerpt = $post->post_excerpt; // post excerpt
+        
+		echo '<article id="page-excerpt-'.$childID.'" class="page-excerpt">';
+		echo '<h3><a href="'.$childPermalink.'">'.$childTitle.'&nbsp;&rsaquo;</a></h3>';
+		echo '<p>'.$childExcerpt.' <a href="'.$childPermalink.'">Read More&nbsp;&rsaquo;</a></p>';
+		echo '</article>';
+        
+	endwhile;
+	
+	wp_reset_query(); 
+        
+}
+
+
+
 ?>
