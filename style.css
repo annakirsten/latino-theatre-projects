@@ -238,26 +238,22 @@ p.slider-caption {
 button.slider-button {
 	z-index: 50px;
 	position:absolute;
-	right:50px;
-	bottom:50px;
+	right:30px;
+	bottom:30px;
 	display:block;
-	font-variant:small-caps;
-	color: #000000;
-	font-size:1.6em;
-	box-shadow: 2px 2px 0px #231f20;
+	color: #fff;
+	font-size:1em;
 	padding: 10px 20px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	border: 2px solid #000000;
-	background: #FFFFFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #F05C2A;
 	cursor:pointer;
 }
 
 button.slider-button:hover {
-	color: #000000;
-	background: #FFFFFF;
-	border: 2px solid #000000;
+	color: #fff;
+	background: #F05C2A;
 }
 
 #content a img.attachment-thumbnail {
@@ -405,6 +401,7 @@ h2 {
 }
 
 h3 {
+    color: #688f86;
     font-size: 1.563em;
     padding-top: .5em;
     margin-bottom: .3em;
