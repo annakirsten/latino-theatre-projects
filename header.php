@@ -75,7 +75,7 @@
                     <li><a href="https://twitter.com/LTPseattle"><img src="<?php bloginfo('template_directory'); ?>/images/social_tw.png"></a></li>
                 </ul>
             </div>
-            <div class="button">
+            <div class="donate button">
                 <p><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=95216">Donate</a></p>
             </div>
         </div>
