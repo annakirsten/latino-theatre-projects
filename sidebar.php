@@ -2,17 +2,18 @@
     
     <?php get_search_form(); // custom search field ?>
     
-    <h3>Current Productions</h3>
+    <h3>Current Production</h3>
     <ul>
-        <a href="#"><li>Mauris placerat eleifend</li></a>
+        <a href="#"><li>26 Miles</li></a>
     </ul>
     
     <h3>Past Productions</h3>
     <ul>
-        <a href="#"><li>Vestibulum erat wisi</li></a>
-        <a href="#"><li>Quisque sit amet</li></a>
-        <a href="#"><li>Aenean fermentum</li></a>
-        <a href="#"><li>Curabitur massa</li></a>
+        <a href="#"><li>Mariela in the Desert</li></a>
+        <a href="#"><li>Death and the Maiden </li></a>
+        <a href="#"><li>Beauty of the Father </li></a>
+        <a href="#"><li>Mujeres de Arena</li></a>
+        <a href="#"><li>Anna in the Tropics</li></a>
     </ul>
     
     <h3>Recent Posts:</h3>
