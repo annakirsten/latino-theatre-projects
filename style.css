@@ -35,7 +35,7 @@ body {
 }
 
 a:link, a:visited, a:active, a:hover {
-	color: #000000;
+	color: #F05C2A;
     text-decoration: none;
 }
 
@@ -90,21 +90,27 @@ img {
 
 .button {
     display: block;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    border: 1px black solid;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 80px;
+    background-color: #F05C2A;
+    border: 3px #D2B202 solid;
+    border-radius: 10px;
 }
 
 .button a {
     display: block;
+    color: #fff;
+    text-transform: uppercase;
+
 }
 
 .donate-mb {
     display: none;
 }
+
 
 /*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
 
@@ -386,9 +392,10 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.441em;
+    font-size: 4em;
     padding-top :.2em;
     margin-bottom: .4em;
+    color: #F05C2A;
 }
 
 h2 {

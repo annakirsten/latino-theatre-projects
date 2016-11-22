@@ -69,11 +69,13 @@
             <div class="social">
                 <ul>
                     <li><a href="https://www.facebook.com/Latino-Theatre-Projects-346266545430336/"><img src="<?php bloginfo('template_directory'); ?>/images/social_fb.png"></a></li>
+                    
                     <li><a href="https://www.instagram.com/latinotheatreprojects/?hl=en"><img src="<?php bloginfo('template_directory'); ?>/images/social_ig.png"></a></li>
+                    
                     <li><a href="https://twitter.com/LTPseattle"><img src="<?php bloginfo('template_directory'); ?>/images/social_tw.png"></a></li>
                 </ul>
             </div>
-            <div class="donate button">
+            <div class="button">
                 <p><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=95216">Donate</a></p>
             </div>
         </div>
