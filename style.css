@@ -222,6 +222,7 @@ p.slider-caption {
 	position:absolute;
 	top:30px;
 	left:40px;
+    right: 30px;
 	max-width:400px;
 	font-size:1.6em;
 	font-weight:700;
@@ -466,6 +467,11 @@ p {
 @media screen and (max-width: 700px) {
     
     
+    p.slider-caption {
+	   font-size:1.2em;
+    }
+    
+    
     #logo-mb {
         display: block;
         width: 300px;
@@ -574,6 +580,10 @@ p {
 
 /* Mobile Screen set to 600px or below */
 @media screen and (max-width: 600px) {
+    
+    p.slider-caption {
+	   font-size:1.0em;
+    }
     
     
     #main {
