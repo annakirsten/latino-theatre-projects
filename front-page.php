@@ -27,7 +27,7 @@
                 <a href="#"><button class="slider-button">Learn More</button></a>
             </li>
             <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/img-featured.png" alt="image 4">
+                <img src="<?php bloginfo('template_directory'); ?>/images/Flex_4.jpg" alt="image 4">
                 <p class="slider-caption">Image Four: In a metus neque. Donec sed est metus, in cursus lectus. </p>
                 <a href="#"><button class="slider-button">Learn More</button></a>
             </li>

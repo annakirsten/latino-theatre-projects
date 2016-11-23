@@ -463,25 +463,32 @@ p {
 }
 
 /* Tablet Screen set to 800px or below */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
+    
     
     #logo-mb {
         display: block;
-		width: 70px;
-		float: left;
-		margin-top: 15px;
-		margin-left: 20px;
+        width: 300px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #logo-dt {
         display: none;
     }
     
+    #togglebar  {
+        background-color: #688f86;
+        width: 100%;
+        height: 40px;
+    }
+    
     #toggle {
 		display: block;
 		float: right;
-		width: 50px;
-		margin-top: 20px;
+		width: 30px;
+		margin-top: 5px;
 		margin-right: 25px;
 	}
     
@@ -568,6 +575,7 @@ p {
 /* Mobile Screen set to 600px or below */
 @media screen and (max-width: 600px) {
     
+    
     #main {
         width: 100%;
     }
@@ -599,6 +607,17 @@ p {
 		-moz-column-gap: 20px; /* Firefox */
 		column-gap: 20px;
 	}
+    
+}
+
+
+/* Mobile Screen set to 375px or below */
+@media screen and (max-width: 375px) {
+    
+     #logo-mb {
+        display: block;
+        width: 250px;
+    }
     
 }
 
