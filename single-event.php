@@ -26,12 +26,24 @@
             $end_day = get_post_meta( $post->ID, '_end_day', true );
             // Gets the event start year
             $end_year = get_post_meta( $post->ID, '_end_year', true );
+            
+            //gets the location for the map
+            $map_data = get_post_meta($post->ID, '_event_location', true);
+            //gets the name for the map
+            $title_data = get_post_meta($post->ID, '_production_title', true);
             ?>
             <h3><?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?> </h3>
             <?php the_post_thumbnail('large'); ?>
             <?php the_content(''); ?> 
             <small>single-event.php</small>
         </article>
+            <iframe
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAPXGeC6WArhHh5rs42NCHCP09o3luUVNE
+            &q='<?php echo $title_data; ?>hello world,<?php echo $map_data; ?>'" allowfullscreen>
+            </iframe>
         <?php endwhile; ?>
         <?php endif; ?>
         
