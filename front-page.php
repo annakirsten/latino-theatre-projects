@@ -4,7 +4,7 @@
 
     <div id="main">
         
-        <p class="home top-dt">WHAT WE DO Ficabore ptaepedi alique nation exceped magnatur re simagnatem quis de minis adis enisitiandic tempos incia sunti ditin net inciatur aspis magnatu rionseque si omnis.</p>
+        <p class="home top-dt">Latino Theatre Projects presents Latin American and Spanish theatre in the Puget Sound region and beyond.</p>
         
         <?php //add_flexslider(); ?>
         
@@ -12,17 +12,17 @@
         <div class="flexslider">
             <ul class="slides">
             <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/img-featured.png" alt="image 1">
+                <img src="<?php bloginfo('template_directory'); ?>/images/Flex_1.jpg" alt="image 1">
                 <p class="slider-caption">Image One: In a metus neque. Donec sed est metus, in cursus lectus. </p>
                 <a href="#"><button class="slider-button">Learn More</button></a>
             </li>
             <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/img-featured.png" alt="image 2">
+                <img src="<?php bloginfo('template_directory'); ?>/images/Flex_2.jpg" alt="image 2">
                 <p class="slider-caption">Image Two: In a metus neque. Donec sed est metus, in cursus lectus. </p>
                 <a href="#"><button class="slider-button">Learn More</button></a>
             </li>
             <li>
-                <img src="<?php bloginfo('template_directory'); ?>/images/img-featured.png" alt="image 3">
+                <img src="<?php bloginfo('template_directory'); ?>/images/Flex_3.jpg" alt="image 3">
                 <p class="slider-caption">Image Three: In a metus neque. Donec sed est metus, in cursus lectus. </p>
                 <a href="#"><button class="slider-button">Learn More</button></a>
             </li>
@@ -35,7 +35,7 @@
         </div>
         <!-- End Flex Slider -->
         
-        <p class="home top-mb">WHAT WE DO Ficabore ptaepedi alique nation exceped magnatur re simagnatem quis de minis adis enisitiandic tempos incia sunti ditin net inciatur aspis magnatu rionseque si omnis.</p>
+        <p class="home top-mb">Latino Theatre Projects presents Latin American and Spanish theatre in the Puget Sound region and beyond.</p>
         
         <div class="donate-mb button">
             <p><a href="<?php bloginfo('url'); ?>/#">Donate</a></p>
