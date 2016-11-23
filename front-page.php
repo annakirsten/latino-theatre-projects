@@ -6,6 +6,8 @@
         
         <p class="home top-dt">WHAT WE DO Ficabore ptaepedi alique nation exceped magnatur re simagnatem quis de minis adis enisitiandic tempos incia sunti ditin net inciatur aspis magnatu rionseque si omnis.</p>
         
+        <?php //add_flexslider(); ?>
+        
         <!-- Begin Flex Slider -->
         <div class="flexslider">
             <ul class="slides">

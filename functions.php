@@ -78,8 +78,35 @@ function get_child_pages() {
         
 	endwhile;
 	
-	wp_reset_query(); 
-        
+	wp_reset_query();
+    
 }
+
+/*function add_flexslider() {
+	
+	global $post;
+    
+	$attachments = get_children(array('post_parent' => $post->ID, 'order' => 'ASC', 'orderby' => 'menu_order',  'post_type' => 'event', 'post_mime_type' => 'image',));
+    
+	if ($attachments) {
+	
+		echo '<div class="flexslider">';
+            echo '<ul class="slides">';
+
+            foreach ( $attachments as $attachment ) {
+
+                echo '<li>';
+                echo wp_get_attachment_image($attachment->ID, 'full'); 
+                echo '<span class="description">';
+                echo get_post_field('post_content', $attachment->ID); 
+                echo '</li>';
+
+            }
+
+            echo '</ul>';
+		echo '</div>';
+	}
+    
+}*/
 
 ?>
