@@ -13,6 +13,9 @@
         <?php if (have_posts()) : ?><!-- Begin Current Productions if -->
         <?php while (have_posts()) : the_post(); ?><!-- Begin Current Productions while -->
         <?php 
+        global $post;
+        global $wp_locale;        
+     
         // Gets the event start month from the meta field
         $start_month = get_post_meta( $post->ID, '_start_month', true );
         // Converts the month number to the month name
@@ -57,9 +60,12 @@
         <!-- Begin Past Productions Loop -->
         <?php rewind_posts(); // stop loop one ?>
         <?php query_posts('post_type=event'); // show productions ?>
-        <?php if (have_posts()) : ?><!-- Begin Current Productions if -->
-        <?php while (have_posts()) : the_post(); ?><!-- Begin Current Productions while -->
-        <?php 
+        <?php if (have_posts()) : ?><!-- Begin Past Productions if -->
+        <?php while (have_posts()) : the_post(); ?><!-- Begin Past Productions while -->
+        <?php
+        global $post;
+        global $wp_locale;        
+     
         // Gets the event start month from the meta field
         $start_month = get_post_meta( $post->ID, '_start_month', true );
         // Converts the month number to the month name

@@ -42,7 +42,7 @@
             height="450"
             frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAPXGeC6WArhHh5rs42NCHCP09o3luUVNE
-            &q='<?php echo $title_data; ?>hello world,<?php echo $map_data; ?>'" allowfullscreen>
+            &q='<?php echo $title_data; ?>,<?php echo $map_data; ?>'" allowfullscreen>
             </iframe>
         <?php endwhile; ?>
         <?php endif; ?>
