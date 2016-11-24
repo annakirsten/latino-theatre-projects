@@ -111,18 +111,31 @@ function getDates(){
         return array($start_month_word, $start_day, $start_year, $end_month_word, $end_day, $end_year, $today_date ,$compare_date);
 }
 
-/*function add_flexslider() {
-	
+function add_flexslider() {
+    
 	global $post;
     
-	$attachments = get_children(array('post_parent' => $post->ID, 'order' => 'ASC', 'orderby' => 'menu_order',  'post_type' => 'event', 'post_mime_type' => 'image',));
+	$attachments = get_children(array('post_parent' => $post->ID, 'order' => 'ASC', 'orderby' => 'menu_order',  'post_type' => 'attachment', 'post_mime_type' => 'image',));
     
 	if ($attachments) {
 	
+        // begin slider
 		echo '<div class="flexslider">';
             echo '<ul class="slides">';
 
-            foreach ( $attachments as $attachment ) {
+            foreach ( $attachments as $attachment_id => $attachment ) {
+                
+                $theImage = wp_get_attachment_image($attachment_id, 'full');
+                $theCaption = get_post_field('post_excerpt', $attachment->ID);
+                $theLink = get_post_field('post_content', $attachment->ID);
+                
+                if (is_page('Home')) {
+			
+                    echo $theImage;
+                    echo '<blockquote class="home">'.$theBlockquote.'&nbsp;</blockquote>';
+                    echo '<a href="'.$theLink.'"><button class="home">Learn More&nbsp;&raquo;</button></a>';
+                    
+                }
 
                 echo '<li>';
                 echo wp_get_attachment_image($attachment->ID, 'full'); 
@@ -136,6 +149,6 @@ function getDates(){
 		echo '</div>';
 	}
     
-}*/
+}
 
 ?>

@@ -33,7 +33,7 @@
             $title_data = get_post_meta($post->ID, '_production_title', true);
             ?>
             <h3><?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?> </h3>
-            <?php the_post_thumbnail('large'); ?>
+            <?php add_flexslider(); ?>
             <?php the_content(''); ?> 
             <small>single-event.php</small>
         </article>

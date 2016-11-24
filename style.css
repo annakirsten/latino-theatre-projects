@@ -463,6 +463,7 @@ p {
 	
 }
 
+<<<<<<< Updated upstream
 /* Tablet Screen set to 800px or below */
 @media screen and (max-width: 700px) {
     
@@ -471,6 +472,14 @@ p {
 	   font-size:1.2em;
     }
     
+=======
+/* Tablet Screen set to 700px or below */
+@media screen and (max-width: 700px) {
+    
+    #navigation {
+		display: none;
+	}
+>>>>>>> Stashed changes
     
     #logo-mb {
         display: block;
@@ -506,11 +515,7 @@ p {
 		display: none;
 	}
 	
-	#navigation {
-		display: none;
-	}
-    
-    #navigation ul {
+	#navigation ul {
         width: 100%;
     }
 	
