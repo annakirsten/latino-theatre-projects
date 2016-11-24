@@ -335,7 +335,6 @@ button.slider-button:hover {
     margin: 0 auto;
     padding: 0px;
     overflow: hidden;
-    clear: both;
 	color: #fff;
 	
 	-webkit-column-count: 4; /* Chrome Safari Opera */
@@ -359,12 +358,23 @@ button.slider-button:hover {
 	list-style-position: outside;
 }
 
+#footer-nav h4 {
+    -webkit-column-break-before: auto;
+    break-before: auto;
+    -webkit-column-break-after: avoid;
+    break-after: avoid-column;
+    margin-bottom: 0px;
+}
+
 #footer-nav li {
 	font-size: .75em;
 }
 
-#footer-nav .nb {
-	break-after: avoid;
+#footer-nav.nb {
+    -webkit-column-break-before: avoid;
+    break-before: avoid-column;
+    -webkit-column-break-after: avoid;
+	break-after: avoid-column;
 }
 /*++++++++++++++++++++++++++++++++typography++++++++++++++++++++++++++++++++*/
 
