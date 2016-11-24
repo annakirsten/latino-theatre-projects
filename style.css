@@ -463,23 +463,12 @@ p {
 	
 }
 
-<<<<<<< Updated upstream
-/* Tablet Screen set to 800px or below */
-@media screen and (max-width: 700px) {
-    
-    
-    p.slider-caption {
-	   font-size:1.2em;
-    }
-    
-=======
 /* Tablet Screen set to 700px or below */
 @media screen and (max-width: 700px) {
     
     #navigation {
 		display: none;
 	}
->>>>>>> Stashed changes
     
     #logo-mb {
         display: block;
@@ -539,6 +528,10 @@ p {
         width: 85%;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+    
+    p.slider-caption {
+	   font-size:1.2em;
     }
     
     p.home.top-dt {
@@ -624,7 +617,6 @@ p {
 	}
     
 }
-
 
 /* Mobile Screen set to 375px or below */
 @media screen and (max-width: 375px) {
