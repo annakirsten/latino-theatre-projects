@@ -37,9 +37,9 @@
 
     <?php if($today_date<$compare_date) :?>
         <ul>
-            <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+            <h2 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-            <h3><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
+            <h3 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
 
             <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 
@@ -86,9 +86,9 @@
 
     <?php if($today_date>$compare_date) :?>
         <ul>
-            <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+            <h2 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-            <h3><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
+            <h3 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
 
             <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 
@@ -106,7 +106,7 @@
         <?php query_posts('showposts=1'); //give loop two directions ?>
         <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
             <article id="<?php the_ID(); ?>" class="blog-excerpt">
-                <h4><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h4>
+                <h2><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h2>
                 <small>Date: <?php the_time('F j, Y'); ?></small>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
                 <?php the_excerpt(''); //show the excerpt ?>

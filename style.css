@@ -266,18 +266,6 @@ button.slider-button:hover {
     padding-top: .2em;
 }
 
-.button.go-to-blog {
-    margin: 25px auto;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border: 1px solid #000000;
-}
-
 #aside {
     float: right;
     width: 280px;
@@ -322,6 +310,15 @@ button.slider-button:hover {
 #aside .button {
     margin-top: 0px;
     margin-bottom: 15px;
+}
+
+#aside h2 {
+    padding-top: .25em;
+    margin-bottom: 0;
+}
+
+h3.production_dates {
+    padding-top: 0;
 }
 
 /*++++++++++++++++++++++++++++++++form++++++++++++++++++++++++++++++++*/

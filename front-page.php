@@ -18,7 +18,7 @@
         </div>
 
         <div id="recent-posts">
-            <h2>Recent Blog Posts</h2>
+            <h2>Recent Blog Post</h2>
             <?php rewind_posts(); //stop loop one ?>
             <?php query_posts('showposts=1'); //give loop two directions ?>
             <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
@@ -29,10 +29,9 @@
                     <?php the_excerpt(''); //show the excerpt ?>
                 </article>
             <?php endwhile; endif; //end the loop ?>
-
-            <div class="button go-to-blog">
-                <div><a href="<?php bloginfo('url'); ?>/blog">Go to our Blog page</a></div>
-            </div>
+            
+            <a href="<?php bloginfo('url'); ?>/blog">Go to Blog&nbsp;&raquo;</a>
+            
         </div>
 
         <!-- <p>front-page.php</p> -->
