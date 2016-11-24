@@ -129,20 +129,17 @@ function add_flexslider() {
                 $theCaption = get_post_field('post_excerpt', $attachment->ID);
                 $theLink = get_post_field('post_content', $attachment->ID);
                 
-                if (is_page('Home')) {
-			
-                    echo $theImage;
-                    echo '<blockquote class="home">'.$theBlockquote.'&nbsp;</blockquote>';
-                    echo '<a href="'.$theLink.'"><button class="home">Learn More&nbsp;&raquo;</button></a>';
-                    
-                }
-
                 echo '<li>';
-                echo wp_get_attachment_image($attachment->ID, 'full'); 
-                echo '<span class="description">';
-                echo get_post_field('post_content', $attachment->ID); 
-                echo '</li>';
+                
+                    echo $theImage;
+                    echo '<p class="slider-caption">'.$theCaption.'&nbsp;</p>';
 
+                    if (is_page('Home')) {
+                        echo '<a href="'.$theLink.'"><button class="slider-button">Learn More&nbsp;&raquo;</button></a>';
+                    }
+                
+                echo '</li>';
+                
             }
 
             echo '</ul>';

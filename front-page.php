@@ -6,37 +6,9 @@
         
         <p class="home top-dt">Latino Theatre Projects presents Latin American and Spanish theatre in the Puget Sound region and beyond.</p>
         
-        <?php add_flexslider(); ?>
         
         <!-- Begin Flex Slider -->
-        <!--<div class="flexslider">
-            <ul class="slides">
-            <li>
-                <img src="<?php //bloginfo('template_directory'); ?>/images/Flex_1.jpg" alt="image 1">
-                <p class="slider-caption">Image One: In a metus neque. Donec sed est metus, in cursus lectus. </p>
-                <a href="#"><button class="slider-button">Learn More</button></a>
-            </li>
-            <li>
-                <img src="<?php //bloginfo('template_directory'); ?>/images/Flex_2.jpg" alt="image 2">
-                <p class="slider-caption">Image Two: In a metus neque. Donec sed est metus, in cursus lectus. </p>
-                <a href="#"><button class="slider-button">Learn More</button></a>
-            </li>
-            <li>
-                <img src="<?php //bloginfo('template_directory'); ?>/images/Flex_3.jpg" alt="image 3">
-                <p class="slider-caption">Image Three: In a metus neque. Donec sed est metus, in cursus lectus. </p>
-                <a href="#"><button class="slider-button">Learn More</button></a>
-            </li>
-            <li>
-<<<<<<< Updated upstream
-                <img src="<?php bloginfo('template_directory'); ?>/images/Flex_4.jpg" alt="image 4">
-=======
-                <img src="<?php //bloginfo('template_directory'); ?>/images/img-featured.png" alt="image 4">
->>>>>>> Stashed changes
-                <p class="slider-caption">Image Four: In a metus neque. Donec sed est metus, in cursus lectus. </p>
-                <a href="#"><button class="slider-button">Learn More</button></a>
-            </li>
-            </ul>
-        </div>-->
+        <?php add_flexslider(); ?>
         <!-- End Flex Slider -->
         
         <p class="home top-mb">Latino Theatre Projects presents Latin American and Spanish theatre in the Puget Sound region and beyond.</p>
@@ -57,8 +29,10 @@
                     <?php the_excerpt(''); //show the excerpt ?>
                 </article>
             <?php endwhile; endif; //end the loop ?>
-            
-            <a href="<?php bloginfo('url'); ?>/blog">Go to our Blog page</a>
+
+            <div class="button go-to-blog">
+                <div><a href="<?php bloginfo('url'); ?>/blog">Go to our Blog page</a></div>
+            </div>
         </div>
 
         <!-- <p>front-page.php</p> -->

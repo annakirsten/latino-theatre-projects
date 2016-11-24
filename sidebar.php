@@ -102,32 +102,8 @@
     
     <h3>Recent Posts:</h3>
     <?php if (!( is_page() )) : ?>
-        <?php rewind_posts(); //stop loop on
-    e ?>
-    global $post;
-        global $wp_locale;        
-     
-        // Gets the event start month from the meta field
-        $start_month = get_post_meta( $post->ID, '_start_month', true );
-        // Converts the month number to the month name
-        $start_month_word = $wp_locale->get_month_abbrev( $wp_locale->get_month( $start_month ) );
-        // Gets the event start day
-        $start_day = get_post_meta( $post->ID, '_start_day', true );
-        // Gets the event start year
-        $start_year = get_post_meta( $post->ID, '_start_year', true );
-
-        // Gets the event end month from the meta field
-        $end_month = get_post_meta( $post->ID, '_end_month', true );
-        // Converts the month number to the month name
-        $end_month_word = $wp_locale->get_month_abbrev( $wp_locale->get_month( $end_month ) );
-        // Gets the event start day
-        $end_day = get_post_meta( $post->ID, '_end_day', true );
-        // Gets the event start year
-        $end_year = get_post_meta( $post->ID, '_end_year', true );
-        
-        //gets today's date for comparison
-        $today_date = current_time('Ymd');
-        $compare_date = $end_year . $end_month . $end_day;p query_posts('showposts=1'); //give loop two directions ?>
+        <?php rewind_posts(); //stop loop one ?>
+        <?php query_posts('showposts=1'); //give loop two directions ?>
         <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
             <article id="<?php the_ID(); ?>" class="blog-excerpt">
                 <h4><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h4>
