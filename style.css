@@ -377,15 +377,18 @@ h3.production_dates {
 /*++++++++++++++++++++++++++++++++footer++++++++++++++++++++++++++++++++*/
 
 #footer {
-    width: 100%;
+    width: 1000px;
     margin: 0 auto;
-    padding: 10px;
+    padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	padding-left: 0px;
 	background: #688f86;
     clear: both;
 }
 
 #footer-nav {
-    max-width: 940px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0px;
     overflow: hidden;
