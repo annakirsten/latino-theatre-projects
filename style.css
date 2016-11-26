@@ -377,7 +377,7 @@ h3.production_dates {
 /*++++++++++++++++++++++++++++++++footer++++++++++++++++++++++++++++++++*/
 
 #footer {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     padding-top: 20px;
 	padding-right: 0px;
@@ -408,6 +408,11 @@ h3.production_dates {
 	
 }
 
+.footer-sub {
+    -webkit-column-break-inside: avoid;
+	break-inside: avoid;
+}
+
 #footer-nav li, #footer-nav h4, #footer-nav a {
 	color: #fff;
 	letter-spacing: 1px;
@@ -415,24 +420,14 @@ h3.production_dates {
 	list-style-position: outside;
 }
 
-#footer-nav h4 {
-    -webkit-column-break-before: auto;
-    break-before: auto;
-    -webkit-column-break-after: avoid;
-    break-after: avoid-column;
+#footer h4 {
     margin-bottom: 0px;
 }
 
-#footer-nav li {
+#footer li {
 	font-size: .75em;
 }
 
-#footer-nav.nb {
-    -webkit-column-break-before: avoid;
-    break-before: avoid-column;
-    -webkit-column-break-after: avoid;
-	break-after: avoid-column;
-}
 
 /*++++++++++++++++++++++++++++++++typography++++++++++++++++++++++++++++++++*/
 
@@ -665,9 +660,8 @@ p {
     }
 	
 	#footer-nav {
-		max-width: 600px;
-        height: auto;
-		padding: 10px;
+		max-width: 100%;
+		padding: 20px;
 		clear: both;
 		color: #fff;
 
