@@ -384,14 +384,14 @@ h3.production_dates {
 #footer {
     width: 960px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 	background: #688f86;
     clear: both;
 }
 
 #footer-nav {
     max-width: 940px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0px;
     overflow: hidden;
 	color: #fff;
