@@ -526,7 +526,7 @@ p {
 
 /* Tablet Screen set to 720px or below 9 COLUMN CUTOFF */
 @media screen and (max-width: 720px) {
-
+/* for some reason the nav bar is dissapearing from here until  about 630px wide */
 	#footer-nav {
 		width: 460px;
 		
@@ -552,7 +552,7 @@ p {
 	}
     
     #logo-mb {
-        display: block;
+        display: block; 
         width: 300px;
         margin-top: 20px;
         margin-left: auto;
