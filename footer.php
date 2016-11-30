@@ -29,6 +29,7 @@
 			<li class="nb">eMail Fernando at:<br><a href="mailto:fernando@email.com">fernando@email.com</a></li>
 			<li>eMail Someone Else at:<br><a href="mailto:someoneelse@email.com">someoneelse@email.com</a></li>
 		</ul>
+
 	</div> <!-- End footer-nav -->
 </div> <!-- End footer -->
     

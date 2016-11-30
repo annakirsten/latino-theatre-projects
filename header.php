@@ -15,7 +15,7 @@
     <!-- STYLES -->
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all">  <!-- stylesheet -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider.css" type="text/css"/>  <!--flexslider css-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">  <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">  <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> <!-- google fonts -->
     
     <!-- SCRIPTS -->

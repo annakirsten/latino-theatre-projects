@@ -37,14 +37,13 @@
 
     <?php if($today_date<$compare_date) :?>
         <ul>
-            <h2 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+            <h5 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
 
-            <h3 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
+            <h5 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h5>
 
             <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 
-            <?php the_excerpt(); ?>
-            <p class="full-story"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Full Story &raquo;</a></p>
+
         </ul>
     <?php endif; ?><!-- End compare if --> 
     <?php endwhile; ?><!-- End Current Productions while -->
@@ -86,21 +85,14 @@
 
     <?php if($today_date>$compare_date) :?>
         <ul>
-            <h2 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-            <h3 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
-
-            <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-
-            <?php the_excerpt(); ?>
-            <p class="full-story"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Full Story &raquo;</a></p>
+            <h5 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
         </ul>
     <?php endif; ?><!-- End compare if --> 
     <?php endwhile; ?><!-- End Past Productions while -->
     <?php endif; ?> <!-- End Past Productions if -->
     <!-- End Past Productions Loop -->
     
-    <h3>Recent Posts:</h3>
+    <h3>Recent Posts</h3>
     <?php if (!( is_page() )) : ?>
         <?php rewind_posts(); //stop loop one ?>
         <?php query_posts('showposts=1'); //give loop two directions ?>
@@ -115,14 +107,10 @@
     <?php endif; ?>
     
     <h3>Support Us</h3>
-    <div class="support button">
-        <p><a href="<?php bloginfo('url'); ?>/donate">Donate Here!</a></p>
-    </div>
+        <p><a href="<?php bloginfo('url'); ?>/#">Donate Here!</a></p>
     
     <h3>Get In Touch</h3>
-    <div class="contact button">
-        <p><a href="<?php bloginfo('url'); ?>/contact">Email Us</a></p>
-    </div>
+        <p><a href="<?php bloginfo('url'); ?>/#">Email Us</a></p>
     
     <?php //dynamic_sidebar(1); ?>
     
