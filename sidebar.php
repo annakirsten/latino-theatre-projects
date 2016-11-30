@@ -116,12 +116,12 @@
     
     <h3>Support Us</h3>
     <div class="support button">
-        <p><a href="<?php bloginfo('url'); ?>/#">Donate Here!</a></p>
+        <p><a href="<?php bloginfo('url'); ?>/donate">Donate Here!</a></p>
     </div>
     
     <h3>Get In Touch</h3>
     <div class="contact button">
-        <p><a href="<?php bloginfo('url'); ?>/#">Email Us</a></p>
+        <p><a href="<?php bloginfo('url'); ?>/contact">Email Us</a></p>
     </div>
     
     <?php //dynamic_sidebar(1); ?>
