@@ -33,12 +33,12 @@
             ?>
             <h3><?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?> </h3>
             <?php add_flexslider(); ?>
-            <?php the_content(''); ?> 
-            <small>single-event.php</small>
+            <?php the_content(''); ?>
         </article>
         
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAPXGeC6WArhHh5rs42NCHCP09o3luUVNE&q='<?php echo $title_data; ?>,<?php echo $map_data; ?>'" allowfullscreen>
+        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAPXGeC6WArhHh5rs42NCHCP09o3luUVNE&q='<?php echo $map_data; ?>'" allowfullscreen>
         </iframe>
+        
         <?php endwhile; ?>
         <?php endif; ?>
         
