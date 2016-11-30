@@ -33,7 +33,7 @@
             
             $(window).resize(function() {
                 if ( loadWidth !== window.innerWidth ) {
-                    if (window.innerWidth <= 800) {
+                    if (window.innerWidth <= 700) {
                         $("#navigation").hide();
                     } else  {
                         $("#navigation").show();
@@ -60,9 +60,10 @@
             <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_horz_rgb.svg" alt="logo"></a>
         </div>
 
+
+    <?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
     
     <div id="header">
-        <?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
 
         <div id="logo-dt">
             <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_vert_RGB.svg" alt="logo"></a>

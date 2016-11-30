@@ -99,7 +99,7 @@ p {
 	padding-bottom: 2em;
 }
 
-p.full-story    {
+p.full-story {
     margin-bottom: 1.5em;
 }
 
@@ -109,14 +109,6 @@ li  {
 }
 
 
-
-
-
-
-
-
-
-
 /*++++++++++++++++++++++++++++++++header++++++++++++++++++++++++++++++++*/
 
 #header {
@@ -124,6 +116,7 @@ li  {
     margin: 0 auto;
     clear: both;
     overflow: hidden;
+    padding-top: 50px;
 }
 
 #header a {
@@ -195,6 +188,7 @@ li  {
 	height: auto;
 	overflow: hidden;
     padding-left: 50px;
+    position: fixed;
 }
 
 #navigation ul {
@@ -264,6 +258,7 @@ li.nav-on   {
 	background: #FFFFFF;
 }
 
+
 /*++++++++++++++++++++++++++++++++content++++++++++++++++++++++++++++++++*/
 
 #content{
@@ -276,10 +271,6 @@ li.nav-on   {
 #main {
     float: left;
     width: 620px;
-}
-
-#main .blog-excerpt p {
-    margin-bottom: 30px;
 }
 
 p.home.top-mb {
@@ -343,6 +334,20 @@ button.slider-button:hover {
     margin-bottom: 30px;
 }
 
+article {
+    clear: both;
+    overflow: hidden;
+}
+
+article p {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+article.blog-excerpt {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
 
 
 /*++++++++++++++++++++++++++++++++form++++++++++++++++++++++++++++++++*/
@@ -451,8 +456,6 @@ button.slider-button:hover {
 }
 
 
-
-
 /*++++++++++++++++++++++++++++++++sidebar++++++++++++++++++++++++++++++++*/
 
 #search h3 {
@@ -508,11 +511,6 @@ h5.production_title {
     font-weight: 700;
     padding-top: 10px;
 }
-
-
-
-
-
 
 
 /*++++++++++++++++++++++++++++++++media queries++++++++++++++++++++++++++++++++*/

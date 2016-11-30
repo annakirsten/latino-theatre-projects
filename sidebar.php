@@ -99,7 +99,7 @@
         <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
             <article id="<?php the_ID(); ?>" class="blog-excerpt">
                 <h2><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h2>
-                <small>Date: <?php the_time('F j, Y'); ?></small>
+                <small><?php the_time('F j, Y'); ?></small>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
                 <?php the_excerpt(''); //show the excerpt ?>
             </article>
@@ -107,7 +107,7 @@
     <?php endif; ?>
     
     <h3>Support Us</h3>
-        <p><a href="<?php bloginfo('url'); ?>/#">Donate Here!</a></p>
+        <p><a href="<?php bloginfo('url'); ?>/support-us/donate">Donate Here!</a></p>
     
     <h3>Get In Touch</h3>
         <p><a href="<?php bloginfo('url'); ?>/#">Email Us</a></p>

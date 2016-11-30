@@ -18,12 +18,11 @@
         <article id="<?php the_ID(); ?>" class="blog-excerpt">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
             <h3><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h3>
-            <small>Date: <?php the_time('F j, Y'); ?></small>
+            <small><?php the_time('F j, Y'); ?></small>
             <?php the_excerpt(''); //show the excerpt ?>
         </article>
         <?php endwhile; endif; //end the loop ?>
-    
-        <p>index.php</p>
+        
     </div>
 
 <?php get_sidebar(); ?>

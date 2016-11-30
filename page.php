@@ -13,8 +13,6 @@
         <?php endwhile; endif; //end the loop ?>
         
         <?php get_child_pages(); ?>
-
-        <p>page.php</p>
         
     </div>
     

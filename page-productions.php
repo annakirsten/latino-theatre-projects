@@ -104,8 +104,6 @@
         <?php endwhile; ?><!-- End Past Productions while -->
         <?php endif; ?> <!-- End Past Productions if -->
         <!-- End Past Productions Loop -->
-
-        <small>page-productions.php</small>
         
     </div>
     
