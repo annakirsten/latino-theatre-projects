@@ -109,6 +109,91 @@ li  {
 }
 
 
+/*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
+
+#toggle {
+	display:none;
+}
+
+#nav-wrapper {
+    background-color: #688f86;
+    width: 100%;
+}
+
+#navigation {
+    margin-bottom: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+	clear: both;
+	height: auto;
+	overflow: hidden;
+    padding-left: 50px;
+}
+
+#navigation ul {
+	width: 66.666666%;
+    float: right;
+}
+
+#navigation li {
+	float: left;
+    width: 20%;
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+	font-size: .875em;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 30px;
+}
+
+#navigation li a {
+    color: #fff;
+    text-transform: uppercase;
+	display: block;
+    font-size: .8em;
+}
+
+#menu-main-menu ul.sub-menu {
+	text-align: left;
+	position: absolute;
+	display: none;
+	z-index: 60;
+	width: auto;
+}
+
+#menu-main-menu ul.sub-menu li {
+    border: none;
+	background: #688f86;
+	display: block;
+	width: 100%;
+	float: none;
+	text-align: left;
+	font-size: .875em;
+    color: #000000;
+    padding: 0 10px;
+}
+
+#menu-main-menu > li:hover ul.sub-menu {
+	display: block;
+}
+
+#menu-main-menu ul.sub-menu li:last-child {
+	border-bottom: none;
+}
+
+#menu-main-menu ul.sub-menu li a {
+	display: block;
+	width: 100%;
+}
+
+li.nav-on   {
+	background: #FFFFFF;
+}
+
+
 /*++++++++++++++++++++++++++++++++header++++++++++++++++++++++++++++++++*/
 
 #header {
@@ -173,92 +258,6 @@ li  {
 }
 
 
-/*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
-
-#toggle {
-	display:none;
-}
-
-#navigation {
-    margin-bottom: 20px;
-    background-color: #688f86;
-    width: 100%;
-    display: block;
-	clear: both;
-	height: auto;
-	overflow: hidden;
-    padding-left: 50px;
-    position: fixed;
-}
-
-#navigation ul {
-	width: 66.666666%;
-    float: right;
-}
-
-#navigation li {
-    margin-left: 4em;
-	float: left;
-	list-style-type: none;
-	text-align: left;
-	line-height: 30px;
-	font-size: .875em;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    /*border-left: 1px solid #fff; */
-    height: 30px;
-}
-
-#navigation li a {
-    color: #fff;
-    text-transform: uppercase;
-	display: block;
-    font-size: 80%;
-}
-
-#menu-main-menu li:hover {
-	/*background: #FFFFFF;*/
-}
-
-#menu-main-menu ul.sub-menu {
-	text-align: left;
-	position: absolute;
-	display: none;
-	z-index: 60;
-	width: auto;
-}
-
-#menu-main-menu ul.sub-menu li {
-    border: none;
-	background: #688f86;
-	display: block;
-	width: 100%;
-	float: none;
-	text-align: left;
-	font-size: .875em;
-    color: #000000;
-    padding: 0 10px;
-}
-
-#menu-main-menu > li:hover ul.sub-menu {
-	display: block;
-}
-
-#menu-main-menu ul.sub-menu li:last-child {
-	border-bottom: none;
-}
-
-#menu-main-menu ul.sub-menu li a {
-	display: block;
-	width: 100%;
-}
-
-li.nav-on   {
-	background: #FFFFFF;
-}
-
-
 /*++++++++++++++++++++++++++++++++content++++++++++++++++++++++++++++++++*/
 
 #content{
@@ -278,33 +277,34 @@ p.home.top-mb {
 }
 
 p.slider-caption {
-	z-index:50;	
-	position:absolute;
-	top:30px;
-	left:40px;
+	z-index: 50;	
+	position: absolute;
+	top: 30px;
+	left: 40px;
     right: 30px;
-	max-width:400px;
-	font-size:1.6em;
-	font-weight:700;
-	color:#FFFFFF;
-	font-style:italic;
+	max-width: 400px;
+	font-size: 1.6em;
+	font-weight: 700;
+	color: #FFFFFF;
+	font-style: italic;
 	text-shadow: 3px 3px 10px #231f20;
 }
 	
 button.slider-button {
-	z-index: 50px;
-	position:absolute;
-	right:30px;
-	bottom:30px;
-	display:block;
+	z-index: 50;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	display: block;
 	color: #fff;
-	font-size:1em;
+	font-size: 1em;
 	padding: 10px 20px;
+	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	border-radius: 10px;
 	background: #F05C2A;
-	cursor:pointer;
+	cursor: pointer;
+    border: none;
 }
 
 button.slider-button:hover {
@@ -485,6 +485,7 @@ article.blog-excerpt {
     background-color: #F05C2A;
     color: #FFFFFF;
     border-radius: 5px;
+    border: none;
 }
 
 #aside li {
