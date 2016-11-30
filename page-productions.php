@@ -6,7 +6,7 @@
 <div id="content" class="page-<?php the_ID(); ?>">   
     
     <div id="main">
-        <h1>Current Productions:</h1>
+        <h1>Current Production</h1>
         <!-- Begin Current Productions Loop -->
         <?php rewind_posts(); // stop loop one ?>
         <?php query_posts('post_type=event'); // show productions ?>
@@ -43,7 +43,7 @@
             <article class="post-box" id="post-box-<?php the_ID(); ?>">
                 <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                 
-                <h3><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
+                <h4><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h4>
 
                 <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 
@@ -56,7 +56,7 @@
         <!-- End Current Productions Loop -->
         
         
-        <h1>Past Productions:</h1>
+        <h1>Past Productions</h1>
         <!-- Begin Past Productions Loop -->
         <?php rewind_posts(); // stop loop one ?>
         <?php query_posts('post_type=event'); // show productions ?>
@@ -93,7 +93,7 @@
             <article class="post-box" id="post-box-<?php the_ID(); ?>">
                 <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
                 
-                <h3><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h3>
+                <h4><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h4>
 
                 <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 
