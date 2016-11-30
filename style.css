@@ -162,6 +162,7 @@ li  {
 	display: none;
 	z-index: 60;
 	width: auto;
+    margin-left: 40px;
 }
 
 #menu-main-menu ul.sub-menu li {
