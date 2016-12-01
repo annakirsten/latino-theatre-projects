@@ -417,24 +417,23 @@ p.read-more {
 
 /*++++++++++++++++++++++++++++++++footer++++++++++++++++++++++++++++++++*/
 
-.footer-sub {
-	-webkit-column-break-inside: avoid;
-	break-inside: avoid;
-}
 
 #footer {
-    width: 960px;
-    margin: 0 auto;
-    padding: 30px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
 	background: #688f86;
     clear: both;
 }
 
 #footer-nav {
     max-width: 940px;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;
+    margin: 0px auto;
+    padding-top: 30px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+    text-overflow:ellipsis;
 	color: #fff;
 	
 	-webkit-column-count: 4; /* Chrome Safari Opera */
@@ -451,21 +450,58 @@ p.read-more {
 	
 }
 
-#footer-nav li, #footer-nav h4, #footer-nav a {
+div.footer-subnav {
+	-webkit-column-break-inside: avoid;
+	break-inside: avoid;
+	-webkit-column-break-inside:avoid;
+	page-break-inside: avoid;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+#footer-copyright {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+/* Footer Typography */
+
+#footer-nav h3, #footer-nav p, #footer-copyright p, #footer-nav address {
+	margin: 0px;
+	padding: 0px;
 	color: #fff;
 	letter-spacing: 1px;
-	list-style: none;
-	list-style-position: outside;
+	font-style: normal;
 }
 
-#footer-nav h4 {
-	margin-bottom: 0px;
+#footer-nav h3 {
+	font-weight: 300;
+	padding-top: 0px;
 }
 
-#footer-nav li {
-	font-size: .75em;
+#footer-nav p {
 	margin-left: 1em;
 }
+
+#footer-nav a {
+	color: #fff;
+	line-height: .8em;
+}
+
+#footer-copyright p {
+	color: #fff;
+	text-align: center;
+}
+
+#footer-nav address {
+	font-size: .8em;
+	font-weight: 100;
+	margin-left: 1em;
+}
+
+
 
 
 /*++++++++++++++++++++++++++++++++sidebar++++++++++++++++++++++++++++++++*/
