@@ -162,7 +162,6 @@ li  {
 	display: none;
 	z-index: 60;
 	width: auto;
-    margin-left: 40px;
 }
 
 #menu-main-menu ul.sub-menu li {
@@ -561,14 +560,9 @@ h5.production_title {
 	}
 }
 
-/* Tablet Screen set to 920px or below */
-@media screen and (max-width: 920px) {
-	
-}
-
 /* Tablet Screen set to 720px or below 9 COLUMN CUTOFF */
 @media screen and (max-width: 720px) {
-/* for some reason the nav bar is dissapearing from here until  about 630px wide */
+
 	#footer-nav {
 		width: 460px;
 		
