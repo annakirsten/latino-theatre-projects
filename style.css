@@ -357,6 +357,10 @@ article.blog-excerpt {
     margin-bottom: 0;
 }
 
+p.read-more {
+    display: inline;
+}
+
 
 /*++++++++++++++++++++++++++++++++form++++++++++++++++++++++++++++++++*/
 
