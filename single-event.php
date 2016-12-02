@@ -36,8 +36,18 @@
             <?php the_content(''); ?>
         </article>
         
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAPXGeC6WArhHh5rs42NCHCP09o3luUVNE&q='<?php echo $map_data; ?>'" allowfullscreen>
-        </iframe>
+        <div class="map_wrap">
+            <div class="map_text">
+                <h3>Title: </h3><br>
+                <?php echo $title_data ?><br>
+                <h3>Location: </h3><br>
+                <?php echo $map_data ?>
+            </div>
+            <div class="map_case">
+                <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAPXGeC6WArhHh5rs42NCHCP09o3luUVNE&q='<?php echo $map_data; ?>'" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
         
         <?php endwhile; ?>
         <?php endif; ?>

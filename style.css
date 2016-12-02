@@ -361,6 +361,21 @@ p.read-more {
     display: inline;
 }
 
+.map_wrap {
+    display: inline;
+    height: 100%;
+    width: 100%;
+}
+
+.map_case {
+    float: right;
+    display: inline;
+}
+
+.map_text {
+    float: left;
+    display: inline;
+}
 
 /*++++++++++++++++++++++++++++++++form++++++++++++++++++++++++++++++++*/
 
