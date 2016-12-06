@@ -50,20 +50,20 @@
 
 <body <?php body_class(); ?>>
         
-        <div id="togglebar">
-            <!--start toggle -->
-            <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/toggle.png" alt="Toggle Menu">
-            <!--end toggle -->
-        </div>
-    
-        <div id="logo-mb">
-            <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_horz_rgb.svg" alt="logo"></a>
-        </div>
+    <div id="togglebar">
+        <!--start toggle -->
+        <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/toggle.png" alt="Toggle Menu">
+        <!--end toggle -->
+    </div>
 
     <div id="nav-wrapper">
         <?php wp_nav_menu(array('theme_location' =>'main-menu', 'container' => 'nav', 'container_id' => 'navigation',)); ?>
     </div>
     
+    <div id="logo-mb">
+        <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_horz_rgb.svg" alt="logo"></a>
+    </div>
+
     <div id="header">
 
         <div id="logo-dt">

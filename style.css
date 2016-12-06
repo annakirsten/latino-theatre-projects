@@ -95,7 +95,7 @@ h4 {
 }
 
 p {
-    font-size: .8em;
+    font-size: 1em;
 	padding-bottom: 2em;
 }
 
@@ -136,7 +136,7 @@ li  {
     float: right;
 }
 
-#navigation li {
+#navigation ul li {
 	float: left;
     width: 20%;
 	list-style-type: none;
@@ -247,7 +247,7 @@ li.nav-on   {
     display: block;
     width: 150px;
     height: 40px;
-    line-height: 35px;
+    line-height: 40px;
     text-align: center;
     margin-top: 80px;
     background-color: #F05C2A;
@@ -338,8 +338,8 @@ button.slider-button:hover {
     width: 280px;
 }
 
-.post-box   {
-    margin-bottom: 30px;
+.post-box p  {
+    margin-bottom: 10px;
 }
 
 article {
@@ -352,8 +352,12 @@ article.blog-excerpt {
     margin-bottom: 30px;
 }
 
-#main article.blog-excerpt p, #aside article.blog-excerpt p {
+#main article.blog-excerpt p, #aside article.blog-excerpt p, #main article.post-box p {
     display: inline;
+}
+
+#main #current-productions, #main #past-productions {
+    margin-bottom: 30px;
 }
 
 .map_wrap {
@@ -641,10 +645,6 @@ h5.production_title {
 /* Tablet Screen set to 700px or below */
 @media screen and (max-width: 700px) {
     
-    #navigation {
-		display: none;
-	}
-    
     #logo-mb {
         display: block; 
         width: 300px;
@@ -679,24 +679,33 @@ h5.production_title {
 		display: none;
 	}
 	
-	#navigation ul {
+	#navigation {
+		display: none;
+        padding: 0;
+        height: auto;
+	}
+    
+    #navigation ul {
         width: 100%;
     }
 	
 	#navigation ul li {
 		float: none;
-		padding: 10px 40px;
+		margin: 20px;
 		width: auto;
 		text-align: left;
 		font-size: 1.5em;
-		margin: 0;
         border: none;
-        border-bottom: 1px solid #000000;
+        border-bottom: 2px solid #FFFFFF;
     }
 	
 	#navigation ul li a {
 		display: block;
 	}
+    
+    #header {
+        display: none;
+    }
     
     #main {
         float: none;

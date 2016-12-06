@@ -23,10 +23,10 @@
             <?php query_posts('showposts=1'); //give loop two directions ?>
             <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
                 <article id="<?php the_ID(); ?>" class="blog-excerpt">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
-                    <small><?php the_time('F j, Y'); ?></small>
                     <h3><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h3>
-                    <?php the_excerpt(''); //show the excerpt ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
+                    <small><?php the_time('F j, Y'); ?></small><br />
+                    <?php the_excerpt(); //show the excerpt ?>
                     <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&raquo;</a></p>
                 </article>
             <?php endwhile; endif; //end the loop ?>
