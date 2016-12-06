@@ -101,8 +101,8 @@
                 <h2><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h2>
                 <small><?php the_time('F j, Y'); ?></small>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
-                <?php the_excerpt(''); //show the excerpt ?>
-                <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&rsaquo;</a></p>
+                <?php the_excerpt(); //show the excerpt ?>
+                <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&raquo;</a></p>
             </article>
         <?php endwhile; endif; //end the loop ?>
     <?php endif; ?>

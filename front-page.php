@@ -27,7 +27,7 @@
                     <small><?php the_time('F j, Y'); ?></small>
                     <h3><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h3>
                     <?php the_excerpt(''); //show the excerpt ?>
-                    <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&rsaquo;</a></p>
+                    <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&raquo;</a></p>
                 </article>
             <?php endwhile; endif; //end the loop ?>
             

@@ -345,19 +345,14 @@ button.slider-button:hover {
 article {
     clear: both;
     overflow: hidden;
-}
-
-article p {
-    padding-bottom: 0;
-    margin-bottom: 10px;
+    display: block;
 }
 
 article.blog-excerpt {
-    padding-bottom: 30px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
-p.read-more {
+#main article.blog-excerpt p, #aside article.blog-excerpt p {
     display: inline;
 }
 
