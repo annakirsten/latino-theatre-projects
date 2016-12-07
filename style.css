@@ -280,6 +280,12 @@ li.nav-on   {
     width: 620px;
 }
 
+p.home.top-dt {
+    font-size: 1.5em;
+    color: #688f86;
+    line-height: 1.5em;
+    }
+
 p.home.top-mb {
     display: none;
 }
@@ -571,6 +577,10 @@ h5.production_title {
     padding-top: 10px;
 } 
 
+#production_title_current   {
+    font-size: 1.5em;
+}
+
 
 /*++++++++++++++++++++++++++++++++media queries++++++++++++++++++++++++++++++++*/
 
@@ -716,6 +726,8 @@ h5.production_title {
     p.home.top-mb {
         display: block;
         font-size: 1.2em;
+        color: #688f86;
+        line-height: 1.5em;
     }
     
     .donate-mb {
