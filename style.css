@@ -569,7 +569,7 @@ h5.production_title {
     font-size: .9em;
     font-weight: 700;
     padding-top: 10px;
-}
+} 
 
 
 /*++++++++++++++++++++++++++++++++media queries++++++++++++++++++++++++++++++++*/
@@ -602,7 +602,7 @@ h5.production_title {
 	}
 
 	#footer-nav {
-		max-width: 700px;
+		width: 700px;
 		
 		-webkit-column-count: 3; /* Chrome Safari Opera */
 		-moz-column-count: 3; /* Firefox */
