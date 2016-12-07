@@ -108,10 +108,8 @@
     <?php endif; ?>
     
     <h3>Support Us</h3>
-        <p><a href="<?php bloginfo('url'); ?>/support-us/donate">Donate Here!</a></p>
-    
-    <h3>Get In Touch</h3>
-        <p><a href="<?php bloginfo('url'); ?>/#">Email Us</a></p>
+        <p><a href="<?php bloginfo('url'); ?>/support-us/donate">Find out how your donations help us create Theatre &Uacute;til!</a></p>
+
     
     <?php //dynamic_sidebar(1); ?>
     
