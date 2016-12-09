@@ -28,19 +28,16 @@
                 $end_year = get_post_meta( $post->ID, '_end_year', true );
                 //gets the location for the map
                 $map_data = get_post_meta($post->ID, '_event_location', true);
-                //gets the name for the map
-                $title_data = get_post_meta($post->ID, '_production_title', true);
             ?>
-            <h3><?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?> </h3>
             <?php add_flexslider(); ?>
             <?php the_content(''); ?>
         </article>
         
         <div class="map_wrap">
             <div class="map_text">
-                <h3>Title: </h3><br>
-                <?php echo $title_data ?><br>
-                <h3>Location: </h3><br>
+                <h3>When</h3>
+                <?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> - <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?><br>
+                <h3>Where</h3>
                 <?php echo $map_data ?>
             </div>
             <div class="map_case">

@@ -34,8 +34,15 @@
     ?>
 
     <?php if($today_date<$compare_date) :?>
+<<<<<<< HEAD
     <ul>
         <h5 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
+=======
+        <ul>
+            <h5 class="production_title" id="production_title_current"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
+
+            <h5 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h5>
+>>>>>>> origin/master
 
         <h5 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h5>
 
@@ -93,6 +100,7 @@
     <?php endif; ?> <!-- End Past Productions if -->
     <!-- End Past Productions Loop -->
     
+<<<<<<< HEAD
     <h3>Recent Posts</h3>
     <?php if (!( is_page() )) : ?>
         <?php rewind_posts(); //stop loop one ?>
@@ -108,11 +116,11 @@
         <?php endwhile; endif; //end the loop ?>
     <?php endif; ?>
     
+=======
+>>>>>>> origin/master
     <h3>Support Us</h3>
-        <p><a href="<?php bloginfo('url'); ?>/support-us/donate">Donate Here!</a></p>
-    
-    <h3>Get In Touch</h3>
-        <p><a href="<?php bloginfo('url'); ?>/#">Email Us</a></p>
+        <p><a href="<?php bloginfo('url'); ?>/support-us/donate">Find out how your donations help us create Theatre &Uacute;til!</a></p>
+
     
     <?php //dynamic_sidebar(1); ?>
     

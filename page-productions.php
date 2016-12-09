@@ -6,6 +6,7 @@
 <div id="content" class="page-<?php the_ID(); ?>">   
     
     <div id="main">
+
         <div id="current-productions">
             <h1>Current Production</h1>
             <!-- Begin Current Productions Loop -->

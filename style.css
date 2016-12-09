@@ -280,6 +280,12 @@ li.nav-on   {
     width: 620px;
 }
 
+p.home.top-dt {
+    font-size: 1.5em;
+    color: #688f86;
+    line-height: 1.5em;
+    }
+
 p.home.top-mb {
     display: none;
 }
@@ -573,6 +579,10 @@ h5.production_title {
     font-size: .9em;
     font-weight: 700;
     padding-top: 10px;
+} 
+
+#production_title_current   {
+    font-size: 1.5em;
 }
 
 
@@ -606,7 +616,7 @@ h5.production_title {
 	}
 
 	#footer-nav {
-		max-width: 700px;
+		width: 700px;
 		
 		-webkit-column-count: 3; /* Chrome Safari Opera */
 		-moz-column-count: 3; /* Firefox */
@@ -725,6 +735,8 @@ h5.production_title {
     p.home.top-mb {
         display: block;
         font-size: 1.2em;
+        color: #688f86;
+        line-height: 1.5em;
     }
     
     .donate-mb {

@@ -4,14 +4,14 @@
 
     <div id="main">
         
-        <p class="home top-dt">Latino Theatre Projects presents Latin American and Spanish theatre in the Puget Sound region and beyond.</p>
+        <p class="home top-dt">We deliver thought-provoking theater that informs, engages and enlightens audiences in the Puget Sound region.</p>
         
         
         <!-- Begin Flex Slider -->
         <?php add_flexslider(); ?>
         <!-- End Flex Slider -->
         
-        <p class="home top-mb">Latino Theatre Projects presents Latin American and Spanish theatre in the Puget Sound region and beyond.</p>
+        <p class="home top-mb">We deliver thought-provoking theater that informs, engages and enlightens audiences in the Puget Sound region.</p>
         
         <div class="donate-mb button">
             <p><a href="<?php bloginfo('url'); ?>/#">Donate</a></p>

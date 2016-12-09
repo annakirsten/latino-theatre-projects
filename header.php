@@ -49,7 +49,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-        
+    
     <div id="togglebar">
         <!--start toggle -->
         <img id="toggle" src="<?php bloginfo('template_directory'); ?>/images/toggle.png" alt="Toggle Menu">
