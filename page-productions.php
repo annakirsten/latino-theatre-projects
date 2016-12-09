@@ -48,7 +48,7 @@
                 <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 
                 <?php the_excerpt(); ?>
-                <p class="full-story"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Full Story &raquo;</a></p>
+                <p class="full-story"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read More &raquo;</a></p>
             </article>
         <?php endif; ?><!-- End compare if --> 
         <?php endwhile; ?><!-- End Current Productions while -->
