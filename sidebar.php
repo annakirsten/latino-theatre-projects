@@ -3,6 +3,7 @@
     <?php get_search_form(); // custom search field ?>
     
     <h3>Current Production</h3>
+    
     <!-- Begin Current Productions Loop -->
     <?php rewind_posts(); // stop loop one ?>
     <?php query_posts('post_type=event'); // show productions ?>
@@ -11,7 +12,6 @@
     <?php
         global $post;
         global $wp_locale;        
-
         // Gets the event start month from the meta field
         $start_month = get_post_meta( $post->ID, '_start_month', true );
         // Converts the month number to the month name
@@ -20,7 +20,6 @@
         $start_day = get_post_meta( $post->ID, '_start_day', true );
         // Gets the event start year
         $start_year = get_post_meta( $post->ID, '_start_year', true );
-
         // Gets the event end month from the meta field
         $end_month = get_post_meta( $post->ID, '_end_month', true );
         // Converts the month number to the month name
@@ -29,26 +28,28 @@
         $end_day = get_post_meta( $post->ID, '_end_day', true );
         // Gets the event start year
         $end_year = get_post_meta( $post->ID, '_end_year', true );
-
         //gets today's date for comparison
         $today_date = current_time('Ymd');
         $compare_date = $end_year . $end_month . $end_day;
     ?>
 
     <?php if($today_date<$compare_date) :?>
-        <ul>
-            <h5 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
+    <ul>
+        <h5 class="production_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h5>
 
-            <h5 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h5>
+        <h5 class="production_dates"><?php echo $start_month_word . ' ' . $start_day . ' ' . $start_year; ?> to <?php echo $end_month_word . ' ' . $end_day . ' ' . $end_year; ?> </h5>
 
-            <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+        <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
 
-
-        </ul>
+    </ul>
     <?php endif; ?><!-- End compare if --> 
     <?php endwhile; ?><!-- End Current Productions while -->
     <?php endif; ?> <!-- End Current Productions if -->
     <!-- End Current Productions Loop -->
+    
+    <?php //get_production_dates(); ?>
+    
+    <?php //current_production( $today_date, $compare_date, $production_date ); ?>
     
     <h3>Past Productions</h3>
     <!-- Begin Past Productions Loop -->
