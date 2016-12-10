@@ -278,6 +278,8 @@ li.nav-on   {
 #main {
     float: left;
     width: 620px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 p.home.top-dt {
@@ -342,6 +344,8 @@ button.slider-button:hover {
 #aside {
     float: right;
     width: 280px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .post-box p  {
@@ -721,7 +725,7 @@ h5.production_title {
         float: none;
         width: 85%;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     
     p.slider-caption {
