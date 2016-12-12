@@ -100,8 +100,10 @@
         <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
             <article id="<?php the_ID(); ?>" class="blog-excerpt">
                 <h2><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h2>
+                <small class="post-date"><?php the_time('F j, Y'); ?></small>
+                <br />
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
-                <small class="post-date"><?php the_time('F j, Y'); ?></small><br />
+                <br />
                 <?php the_excerpt(); //show the excerpt ?>
                 <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&raquo;</a></p>
             </article>
