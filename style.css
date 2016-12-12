@@ -359,6 +359,14 @@ button.slider-button:hover {
     margin-bottom: 10px;
 }
 
+.post-box   {
+    margin-bottom: 50px;
+}
+
+.post-date  {
+    font-size: .7em;
+}
+
 article {
     clear: both;
     overflow: hidden;
@@ -373,9 +381,7 @@ article.blog-excerpt {
     display: inline;
 }
 
-.post-box   {
-    margin-bottom: 50px;
-}
+
 
 #main #current-productions, #main #past-productions {
     margin-bottom: 30px;
