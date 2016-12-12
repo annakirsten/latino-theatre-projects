@@ -6,7 +6,7 @@
 
         <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
 
-        <h2><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h2>
+        <h1><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h1>
 
         <small>Posted on <?php the_time('F j, Y'); ?> by <?php the_author_posts_link(); ?> in <?php the_category(', '); ?></small>
 
