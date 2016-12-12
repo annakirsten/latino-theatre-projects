@@ -36,7 +36,7 @@
         <div class="map_wrap">
             <div class="map_text">
                 <h3>When</h3>
-                <?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> - <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?><br>
+                <?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> - <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?><br><br>
                 <h3>Where</h3>
                 <?php echo $map_data ?>
             </div>
