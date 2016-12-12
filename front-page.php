@@ -27,7 +27,7 @@
                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
                     <small><?php the_time('F j, Y'); ?></small><br />
                     <?php the_excerpt(); //show the excerpt ?>
-                    <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&raquo;</a></p>
+                    <p class="read-more"><a href="<?php the_permalink() ?>">Read more&nbsp;&raquo;</a></p>
                 </article>
             <?php endwhile; endif; //end the loop ?>
             
