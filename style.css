@@ -108,6 +108,13 @@ li  {
     padding-bottom: 1em;
 }
 
+blockquote {
+	font-style: italic;
+	font-size: 1.2em;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 
 /*++++++++++++++++++++++++++++++++nav++++++++++++++++++++++++++++++++*/
 
@@ -251,7 +258,7 @@ li.nav-on   {
     text-align: center;
     margin-top: 80px;
     background-color: #F05C2A;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .button a {
