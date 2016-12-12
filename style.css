@@ -373,6 +373,10 @@ article.blog-excerpt {
     display: inline;
 }
 
+.post-box   {
+    margin-bottom: 50px;
+}
+
 #main #current-productions, #main #past-productions {
     margin-bottom: 30px;
 }
