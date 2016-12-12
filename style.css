@@ -401,6 +401,7 @@ article.blog-excerpt {
 .map_text {
     float: left;
     display: inline;
+    margin-bottom: 20px;
 }
 
 /*++++++++++++++++++++++++++++++++form++++++++++++++++++++++++++++++++*/
