@@ -61,7 +61,7 @@
     </div>
     
     <div id="logo-mb">
-        <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_horz_rgb.svg" alt="logo"></a>
+        <a href="<?php echo get_settings('home'); ?>"><img id="logo" src="<?php bloginfo('template_directory'); ?>/images/LTP_square_RGB.svg" alt="logo"></a>
     </div>
 
     <div id="header">
