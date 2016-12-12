@@ -23,7 +23,7 @@
 		<div class="footer-subnav">
 			<h3><a href="<?php bloginfo('url'); ?>/contact">Contact</a></h3>
 			<p>Email: <a href="mailto:info@latinotheatreprojects.org">info@latinotheatreprojects.org</a><br>
-			Phone: <tel><a href="tel: +2067185077">(206) 718-5077</tel></a><br>
+			Phone: <a href="tel:1-206-718-5077">(206) 718-5077</a> <br>
 			Address: PO Box 24082,<br>Seattle, WA 98124</p>
 		</div> <!-- end footer-subnav -->
 	</div> <!-- End footer-nav -->
