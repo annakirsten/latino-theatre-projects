@@ -2,6 +2,7 @@
     
     <?php get_search_form(); // custom search field ?>
     
+    
     <h3>Current Production</h3>
     
     <!-- Begin Current Productions Loop -->
@@ -47,9 +48,6 @@
     <?php endif; ?> <!-- End Current Productions if -->
     <!-- End Current Productions Loop -->
     
-    <?php //get_production_dates(); ?>
-    
-    <?php //current_production( $today_date, $compare_date, $production_date ); ?>
     
     <h3>Past Productions</h3>
     <!-- Begin Past Productions Loop -->
@@ -110,8 +108,5 @@
     
     <h3>Support Us</h3>
         <p><a href="<?php bloginfo('url'); ?>/support-us/donate">Find out how your donations help us create Theatre &Uacute;til!</a></p>
-
-    
-    <?php //dynamic_sidebar(1); ?>
     
 </div>
