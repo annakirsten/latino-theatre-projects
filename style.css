@@ -355,17 +355,13 @@ button.slider-button:hover {
     margin-bottom: 30px;
 }
 
-.post-box p  {
-    margin-bottom: 10px;
-}
-
 article {
     clear: both;
     overflow: hidden;
     display: block;
 }
 
-article.blog-excerpt {
+article.blog-excerpt, article.post-box {
     margin-bottom: 30px;
 }
 
