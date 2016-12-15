@@ -18,7 +18,7 @@
         <article id="<?php the_ID(); ?>" class="blog-excerpt">
             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); //display the post featured image as thumbnail size ?></a>
             <h3><a href="<?php the_permalink(); //link to the page/posting ?>"><?php the_title(); //get the title?></a></h3>
-            <small><?php the_time('F j, Y'); ?></small>
+            <small><?php the_time('F j, Y'); ?></small><br />
             <?php the_excerpt(); //show the excerpt ?>
             <p class="read-more"><a href="<?php the_permalink() ?>">Read more&nbsp;&raquo;</a></p>
         </article>

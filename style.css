@@ -355,6 +355,7 @@ button.slider-button:hover {
     margin-bottom: 30px;
 }
 
+<<<<<<< HEAD
 .post-box p  {
     margin-bottom: 10px;
 }
@@ -367,13 +368,15 @@ button.slider-button:hover {
     font-size: .7em;
 }
 
+=======
+>>>>>>> origin/master
 article {
     clear: both;
     overflow: hidden;
     display: block;
 }
 
-article.blog-excerpt {
+article.blog-excerpt, article.post-box {
     margin-bottom: 30px;
 }
 
@@ -672,6 +675,21 @@ h5.production_title {
 		-moz-column-gap: 20px; /* Firefox */
 		column-gap: 20px;
 	}
+    .map_wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+    }
+
+    .map_case {
+        float: none;
+        display: block;
+    }
+
+    .map_text {
+        float: none;
+        display: block;
+    }
 }
 
 /* Tablet Screen set to 700px or below */
@@ -806,6 +824,11 @@ h5.production_title {
 		-moz-column-width: 220px; /* Firefox */
 		column-width: 220px;
 	}
+    
+    p.slider-caption {
+        top: 10px;
+        left: 20px;
+    }    
 }
 
 /* Mobile Screen set to 375px or below */
@@ -815,7 +838,19 @@ h5.production_title {
         display: block;
         width: 250px;
     }
-    
+    .map_wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+    }
+
+    .map_case {
+        float: none;
+        display: block;
+    }
+
+    .map_text {
+        float: none;
+        display: block;
+    }    
 }
-
-

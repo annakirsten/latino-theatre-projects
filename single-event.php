@@ -28,6 +28,8 @@
                 $end_year = get_post_meta( $post->ID, '_end_year', true );
                 //gets the location for the map
                 $map_data = get_post_meta($post->ID, '_event_location', true);
+                //gets the name for the map		
+                $title_data = get_post_meta($post->ID, '_production_title', true);
             ?>
             <?php add_flexslider(); ?>
             <?php the_content(''); ?>
@@ -35,6 +37,8 @@
         
         <div class="map_wrap">
             <div class="map_text">
+                <h3>Name</h3>
+                <?php echo $title_data ?>
                 <h3>When</h3>
                 <?php echo $start_month . ' ' . $start_day . ' ' . $start_year; ?> - <?php echo $end_month . ' ' . $end_day . ' ' . $end_year; ?><br><br>
                 <h3>Where</h3>

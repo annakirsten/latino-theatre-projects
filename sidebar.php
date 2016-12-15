@@ -2,6 +2,7 @@
     
     <?php get_search_form(); // custom search field ?>
     
+    
     <h3>Current Production</h3>
     
     <!-- Begin Current Productions Loop -->
@@ -47,9 +48,6 @@
     <?php endif; ?> <!-- End Current Productions if -->
     <!-- End Current Productions Loop -->
     
-    <?php //get_production_dates(); ?>
-    
-    <?php //current_production( $today_date, $compare_date, $production_date ); ?>
     
     <h3>Past Productions</h3>
     <!-- Begin Past Productions Loop -->
@@ -93,8 +91,8 @@
     <?php endif; ?> <!-- End Past Productions if -->
     <!-- End Past Productions Loop -->
     
-    <h3>Recent Posts</h3>
-    <?php if (!( is_page() )) : ?>
+    <?php if ( !(is_front_page()) ) : ?>
+        <h3>Recent Posts</h3>
         <?php rewind_posts(); //stop loop one ?>
         <?php query_posts('showposts=1'); //give loop two directions ?>
         <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
@@ -112,8 +110,5 @@
     
     <h3>Support Us</h3>
         <p><a href="<?php bloginfo('url'); ?>/support-us/donate">Find out how your donations help us create Theatre &Uacute;til!</a></p>
-
-    
-    <?php //dynamic_sidebar(1); ?>
     
 </div>
