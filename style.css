@@ -791,6 +791,12 @@ h5.production_title {
 		-moz-column-width: 220px; /* Firefox */
 		column-width: 220px;
 	}
+    
+    p.slider-caption {
+        top: 10px;
+        left: 20px;
+    }
+    
 }
 
 /* Mobile Screen set to 375px or below */
