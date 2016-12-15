@@ -18,7 +18,6 @@
         </div>
         <div id="recent-posts">
             <h2>Recent Blog Post</h2>
-<<<<<<< HEAD
             <?php rewind_posts(); //stop loop one ?>
             <?php query_posts('showposts=1'); //give loop two directions ?>
             <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
@@ -29,7 +28,6 @@
                     <?php the_excerpt(); //show the excerpt ?>
                     <p class="read-more"><a href="<?php the_permalink() ?>">Read more&nbsp;&raquo;</a></p>
                 </article>
-=======
                 <?php rewind_posts(); //stop loop one ?>
                 <?php query_posts('showposts=1'); //give loop two directions ?>
                 <?php if (have_posts()) : while(have_posts()) : the_post(); //start the loop ?>
@@ -40,7 +38,6 @@
                         <?php the_excerpt(); //show the excerpt ?>
                         <p class="read-more"><a href="<?php the_permalink() ?>">Read More&nbsp;&raquo;</a></p>
                     </article>
->>>>>>> origin/master
             <?php endwhile; endif; //end the loop ?>
 
             <a href="<?php bloginfo('url'); ?>/blog">Go to Blog&nbsp;&raquo;</a>
