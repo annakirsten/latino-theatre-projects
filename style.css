@@ -657,6 +657,21 @@ h5.production_title {
 		-moz-column-gap: 20px; /* Firefox */
 		column-gap: 20px;
 	}
+    .map_wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+    }
+
+    .map_case {
+        float: none;
+        display: block;
+    }
+
+    .map_text {
+        float: none;
+        display: block;
+    }
 }
 
 /* Tablet Screen set to 700px or below */
@@ -795,8 +810,7 @@ h5.production_title {
     p.slider-caption {
         top: 10px;
         left: 20px;
-    }
-    
+    }    
 }
 
 /* Mobile Screen set to 375px or below */
@@ -806,7 +820,19 @@ h5.production_title {
         display: block;
         width: 250px;
     }
-    
+    .map_wrap {
+    display: block;
+    height: 100%;
+    width: 100%;
+    }
+
+    .map_case {
+        float: none;
+        display: block;
+    }
+
+    .map_text {
+        float: none;
+        display: block;
+    }    
 }
-
-
