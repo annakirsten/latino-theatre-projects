@@ -1,5 +1,11 @@
 <div id="aside">
     
+    
+    <div class="donate-mb button">
+        <p><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=95216">Donate</a></p>
+    </div>
+    
+    
     <?php get_search_form(); // custom search field ?>
     
     

@@ -14,7 +14,7 @@
         <p class="home top-mb">We deliver thought-provoking theater that informs, engages and enlightens audiences in the Puget Sound region.</p>
         
         <div class="donate-mb button">
-            <p><a href="<?php bloginfo('url'); ?>/#">Donate</a></p>
+            <p><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=95216">Donate</a></p>
         </div>
         <div id="recent-posts">
             <h2>Recent Blog Post</h2>
