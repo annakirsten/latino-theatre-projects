@@ -26,7 +26,7 @@
         
     </div>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('blog'); ?>
     
 </div>
 

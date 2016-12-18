@@ -111,7 +111,7 @@
         
     </div>
     
-    <?php get_sidebar(); ?>
+    <?php get_sidebar('productions'); ?>
     
 </div>
 <!-- End Content -->
