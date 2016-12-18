@@ -579,6 +579,7 @@ div.footer-subnav {
     color: #FFFFFF;
     border-radius: 5px;
     border: none;
+    -webkit-appearance: none;
 }
 
 #aside li {
