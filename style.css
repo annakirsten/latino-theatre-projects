@@ -727,6 +727,11 @@ h5.production_title {
     .social-donate-dt {
         display: none;
     }
+    
+    .donate-page    {
+        display: none;
+    }
+    
 	
 	#menu-main-menu > li:hover ul.sub-menu {
 		display: none;
