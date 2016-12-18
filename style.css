@@ -270,6 +270,8 @@ li.nav-on   {
 
 .donate-mb {
     display: none;
+    line-height: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -784,6 +786,7 @@ h5.production_title {
     .donate-mb {
         display: block;
         margin: 20px auto;
+        margin-bottom: 80px;
     }
     
     #aside {
