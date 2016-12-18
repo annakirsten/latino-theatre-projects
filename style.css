@@ -355,7 +355,6 @@ button.slider-button:hover {
     margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .post-box p  {
     margin-bottom: 10px;
 }
@@ -368,8 +367,6 @@ button.slider-button:hover {
     font-size: .7em;
 }
 
-=======
->>>>>>> origin/master
 article {
     clear: both;
     overflow: hidden;
@@ -383,8 +380,6 @@ article.blog-excerpt, article.post-box {
 #main article.blog-excerpt p, #aside article.blog-excerpt p, #main article.post-box p {
     display: inline;
 }
-
-
 
 #main #current-productions, #main #past-productions {
     margin-bottom: 30px;
@@ -545,8 +540,6 @@ div.footer-subnav {
 	font-weight: 100;
 	margin-left: 1em;
 }
-
-
 
 
 /*++++++++++++++++++++++++++++++++sidebar++++++++++++++++++++++++++++++++*/
