@@ -33,6 +33,8 @@
 </div> <!-- End footer -->
     
 <?php wp_footer(); ?>
+
+<!--test comment-->
     
 </body>
     
