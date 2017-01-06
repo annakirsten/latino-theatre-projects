@@ -11,7 +11,7 @@
         <?php add_flexslider(); ?>
         <!-- End Flex Slider -->
         
-        <p class="home top-mb">We deliver thought-provoking theater that informs, engages and enlightens audiences in the Puget Sound region.</p>
+        <p class="home top-mb">We create thought-provoking theater, what we call "Teatro Útil/Useful Theatre" that informs, engages and enlightens our audiences.</p>
         
         <div class="donate-mb button">
             <p><a href="https://co.clickandpledge.com/sp/d1/default.aspx?wid=95216">Donate</a></p>
